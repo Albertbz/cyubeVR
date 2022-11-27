@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "RequestPlayerGameBanMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "StartSecureMultiplayerSessionMinimalDelegateDelegate.h"
-#include "ReportCheatDataMinimalDelegateDelegate.h"
 #include "GetCheatingReportsMinimalDelegateDelegate.h"
+#include "RequestPlayerGameBanMinimalDelegateDelegate.h"
 #include "ReportPlayerCheatingMinimalDelegateDelegate.h"
+#include "ReportCheatDataMinimalDelegateDelegate.h"
 #include "RemovePlayerGameBanMinimalDelegateDelegate.h"
-#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebCheatReporting.generated.h"
 
 class UUWorksRequestWebStartSecureMultiplayerSession;
@@ -21,7 +21,7 @@ class UUWorksRequestWebRemovePlayerGameBan;
 class UUWorksRequestWebGetCheatingReports;
 class UUWorksRequestWebEndSecureMultiplayerSession;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebCheatReporting : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

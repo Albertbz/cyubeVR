@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "IsPlayingSharedGameDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
 #include "IsPlayingSharedGameNode.generated.h"
 
 class UIsPlayingSharedGameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UIsPlayingSharedGameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsPlayingSharedGameDelegate Completed;
     
     UIsPlayingSharedGameNode();

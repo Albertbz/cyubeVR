@@ -9,11 +9,18 @@ bool AVRCharacter::UseLightAroundValue() {
     return false;
 }
 
+void AVRCharacter::SetViewDirection_Implementation(FVector Direction) {
+}
+
 void AVRCharacter::ReduceHealthCPP_Implementation(float Amount) {
 }
 
 TArray<UMeshComponent*> AVRCharacter::GetMeshComponents() {
     return TArray<UMeshComponent*>();
+}
+
+FVector AVRCharacter::GetActorLocationForCameraLocationCPP_Implementation(FVector NewCameraLocation) {
+    return FVector{};
 }
 
 AVRCharacter::AVRCharacter() {

@@ -6,14 +6,14 @@
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebSetBanStatus.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebSetBanStatus : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetBanStatusDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetBanStatusMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebSetBanStatus();

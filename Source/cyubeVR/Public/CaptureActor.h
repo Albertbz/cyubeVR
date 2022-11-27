@@ -5,11 +5,11 @@
 
 class USceneCaptureComponent2D;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ACaptureActor : public AActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneCaptureComponent2D* Source;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

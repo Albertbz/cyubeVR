@@ -1,30 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceWeb.h"
-#include "SetAppBuildLiveMinimalDelegateDelegate.h"
 #include "UpToDateCheckMinimalDelegateDelegate.h"
-#include "GetServersAtAddressMinimalDelegateDelegate.h"
-#include "GetAppDepotVersionsMinimalDelegateDelegate.h"
+#include "SetAppBuildLiveMinimalDelegateDelegate.h"
 #include "GetServerListMinimalDelegateDelegate.h"
-#include "GetPlayersBannedMinimalDelegateDelegate.h"
+#include "GetServersAtAddressMinimalDelegateDelegate.h"
 #include "GetCheatingReportsListMinimalDelegateDelegate.h"
+#include "GetPlayersBannedMinimalDelegateDelegate.h"
 #include "GetAppListMinimalDelegateDelegate.h"
+#include "GetAppDepotVersionsMinimalDelegateDelegate.h"
 #include "GetAppBuildsMinimalDelegateDelegate.h"
 #include "GetAppBetasMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebApps.generated.h"
 
 class UUWorksRequestWebUpToDateCheck;
 class UUWorksRequestWebSetAppBuildLive;
+class UUWorksRequestWebGetAppList;
 class UUWorksRequestWebGetServersAtAddress;
 class UUWorksRequestWebGetServerList;
 class UUWorksRequestWebGetPlayersBanned;
 class UUWorksRequestWebGetCheatingReportsList;
-class UUWorksRequestWebGetAppList;
-class UUWorksRequestWebGetAppDepotVersions;
 class UUWorksRequestWebGetAppBuilds;
+class UUWorksRequestWebGetAppDepotVersions;
 class UUWorksRequestWebGetAppBetas;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebApps : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

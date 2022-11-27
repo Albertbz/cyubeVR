@@ -2,19 +2,19 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "UnsubscribeItemDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksPublishedFileID.h"
 #include "UnsubscribeItemMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreUnsubscribeItem.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksRequestCoreUnsubscribeItem : public UUWorksRequestCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUnsubscribeItemDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUnsubscribeItemMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestCoreUnsubscribeItem();

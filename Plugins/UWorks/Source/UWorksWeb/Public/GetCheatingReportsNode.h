@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "GetCheatingReportsDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetCheatingReportsDelegateDelegate.h"
 #include "GetCheatingReportsNode.generated.h"
 
 class UGetCheatingReportsNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetCheatingReportsNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetCheatingReportsDelegate Completed;
     
     UGetCheatingReportsNode();

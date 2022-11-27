@@ -8,11 +8,11 @@
 
 class UConsumeItemNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UConsumeItemNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FConsumeItemDelegate Completed;
     
     UConsumeItemNode();

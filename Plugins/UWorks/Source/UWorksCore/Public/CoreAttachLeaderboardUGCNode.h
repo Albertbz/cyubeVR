@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksResult.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
-#include "AttachLeaderboardUGCDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
+#include "AttachLeaderboardUGCDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
+#include "EUWorksResult.h"
 #include "UWorksUGCHandle.h"
 #include "CoreAttachLeaderboardUGCNode.generated.h"
 
 class UCoreAttachLeaderboardUGCNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSCORE_API UCoreAttachLeaderboardUGCNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAttachLeaderboardUGCDelegate Completed;
     
     UCoreAttachLeaderboardUGCNode();

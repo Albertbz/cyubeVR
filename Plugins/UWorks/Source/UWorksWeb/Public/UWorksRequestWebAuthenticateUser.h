@@ -6,14 +6,14 @@
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebAuthenticateUser.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebAuthenticateUser : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAuthenticateUserDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAuthenticateUserMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebAuthenticateUser();

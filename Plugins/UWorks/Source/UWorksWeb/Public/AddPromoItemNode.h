@@ -2,17 +2,17 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "AddPromoItemDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "UWorksSteamID.h"
+#include "UWorksSteamItemDef.h"
 #include "AddPromoItemNode.generated.h"
 
 class UAddPromoItemNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UAddPromoItemNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAddPromoItemDelegate Completed;
     
     UAddPromoItemNode();

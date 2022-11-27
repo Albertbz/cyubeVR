@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetNumberOfCurrentPlayersNode.generated.h"
 
 class UGetNumberOfCurrentPlayersNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetNumberOfCurrentPlayersNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNumberOfCurrentPlayersDelegate Completed;
     
     UGetNumberOfCurrentPlayersNode();

@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "PopulateItemDescriptionsDelegateDelegate.h"
-#include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
 #include "UWorksLanguages.h"
+#include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
 #include "UWorksRequestWebPopulateItemDescriptions.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebPopulateItemDescriptions : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPopulateItemDescriptionsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPopulateItemDescriptionsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebPopulateItemDescriptions();

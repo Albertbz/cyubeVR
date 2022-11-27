@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ResetLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "ResetLeaderboardDelegateDelegate.h"
-#include "ResetLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksRequestWebResetLeaderboard.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebResetLeaderboard : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLeaderboardDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FResetLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebResetLeaderboard();

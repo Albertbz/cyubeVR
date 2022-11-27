@@ -1,29 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "RuntimeMeshCollisionVertexStream.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "RuntimeMeshTriangleStream.h"
-#include "RuntimeMeshVertexColorStream.h"
-#include "RuntimeMeshCollisionMaterialIndexStream.h"
-#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshVertexTexCoordStream.h"
-#include "RuntimeMeshVertexTangentStream.h"
-#include "RuntimeMeshVertexPositionStream.h"
-#include "RuntimeMeshCollisionTexCoordStream.h"
-#include "RuntimeMeshCollisionTriangleStream.h"
+#include "RuntimeMeshVertexColorStream.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeMeshRenderableMeshData.h"
+#include "RuntimeMeshTriangleStream.h"
+#include "RuntimeMeshVertexTangentStream.h"
+#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshVertexPositionStream.h"
+#include "RuntimeMeshCollisionVertexStream.h"
+#include "RuntimeMeshCollisionTriangleStream.h"
+#include "RuntimeMeshCollisionTexCoordStream.h"
+#include "RuntimeMeshCollisionMaterialIndexStream.h"
+#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshCollisionData.h"
 #include "UObject/NoExportTypes.h"
-#include "RuntimeMeshCollisionCapsule.h"
 #include "RuntimeMeshCollisionSettings.h"
-#include "RuntimeMeshCollisionSphere.h"
 #include "RuntimeMeshCollisionConvexMesh.h"
+#include "RuntimeMeshCollisionSphere.h"
+#include "RuntimeMeshCollisionCapsule.h"
 #include "RuntimeMeshCollisionBox.h"
 #include "RuntimeMeshBlueprintFunctions.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshBlueprintFunctions : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

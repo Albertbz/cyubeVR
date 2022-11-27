@@ -22,6 +22,18 @@ FString UCustomBlockManager::GetNameOfCustomBlock(int32 UniqueId) {
     return TEXT("");
 }
 
+int32 UCustomBlockManager::GetCustomBlockUniqueIDToDrop(int32 UniqueId) {
+    return 0;
+}
+
+bool UCustomBlockManager::GetCustomBlockAllowMove(int32 UniqueId) {
+    return false;
+}
+
+bool UCustomBlockManager::GetCustomBlockAllowCrystalPlacement(int32 UniqueId) {
+    return false;
+}
+
 void UCustomBlockManager::CopyTextureToArraySlice(UTexture2DArray* DestArray, int32 DestSlice, UTexture2D* SourceTexture) {
 }
 

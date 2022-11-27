@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
 #include "PreGenTestActor.generated.h"
 
 class UProceduralMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API APreGenTestActor : public AActor {
     GENERATED_BODY()
 public:

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksGameID.h"
 #include "UWorksLibrary.h"
+#include "UWorksGameID.h"
 #include "UWorksLibraryGameID.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSUTILITIES_API UUWorksLibraryGameID : public UUWorksLibrary {
     GENERATED_BODY()
 public:

@@ -1,46 +1,46 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EBPVRResultSwitch.h"
-#include "Engine/EngineTypes.h"
 #include "UObject/Object.h"
-#include "EGSTransformOverrideType.h"
+#include "Engine/EngineTypes.h"
 #include "BPActorGripInformation.h"
+#include "EGSTransformOverrideType.h"
 #include "UObject/NoExportTypes.h"
+#include "EBPVRResultSwitch.h"
 #include "VRGripScriptBase.generated.h"
 
-class AActor;
-class UGripMotionControllerComponent;
-class USceneComponent;
 class UPrimitiveComponent;
+class USceneComponent;
+class UGripMotionControllerComponent;
+class AActor;
 class UVRGripScriptBase;
 
 UCLASS(Abstract, Blueprintable, DefaultToInstanced, EditInlineNew)
 class UVRGripScriptBase : public UObject {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bIsActive;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EGSTransformOverrideType WorldTransformOverrideType;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bDenyAutoDrop;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bForceDrop;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bDenyLateUpdates;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bInjectPrePhysicsHandle;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bInjectPostPhysicsHandle;
     
-    UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bCanEverTick;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -65,7 +65,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGrip(UGripMotionControllerComponent* GrippingController, const FBPActorGripInformation& GripInformation);
     
-    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    UFUNCTION(BlueprintNativeEvent)
     void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -95,7 +95,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FTransform GetGripTransform(const FBPActorGripInformation& Grip, const FTransform& ParentTransform);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UVRGripScriptBase* GetGripScriptByClass(UObject* WorldContextObject, TSubclassOf<UVRGripScriptBase> GripScriptClass, EBPVRResultSwitch& Result);
     
     UFUNCTION(BlueprintCallable)

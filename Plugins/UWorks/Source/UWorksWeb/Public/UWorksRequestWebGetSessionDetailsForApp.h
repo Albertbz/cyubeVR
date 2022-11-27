@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksSessions.h"
+#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetSessionDetailsForAppDelegateDelegate.h"
-#include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
-#include "UWorksSessions.h"
 #include "UWorksRequestWebGetSessionDetailsForApp.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetSessionDetailsForApp : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetSessionDetailsForAppDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetSessionDetailsForAppMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetSessionDetailsForApp();

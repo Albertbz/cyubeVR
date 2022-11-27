@@ -7,11 +7,11 @@
 
 class UGetUserStatsForGameNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetUserStatsForGameNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserStatsForGameDelegate Completed;
     
     UGetUserStatsForGameNode();

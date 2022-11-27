@@ -1,27 +1,27 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
-#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
+#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
 #include "UnsubscribePublishedFileMinimalDelegateDelegate.h"
 #include "SubscribePublishedFileMinimalDelegateDelegate.h"
+#include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
 #include "GetCollectionDetailsMinimalDelegateDelegate.h"
 #include "EnumerateUserSubscribedFilesMinimalDelegateDelegate.h"
 #include "EnumerateUserPublishedFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebRemoteStorage.generated.h"
 
-class UUWorksRequestWebUnsubscribePublishedFile;
-class UUWorksRequestWebEnumerateUserSubscribedFiles;
 class UUWorksRequestWebSubscribePublishedFile;
+class UUWorksRequestWebUnsubscribePublishedFile;
 class UUWorksRequestWebSetUGCUsedByGC;
 class UUWorksRequestWebGetUGCFileDetails;
 class UUWorksRequestWebGetPublishedFileDetails;
 class UUWorksRequestWebGetCollectionDetails;
+class UUWorksRequestWebEnumerateUserSubscribedFiles;
 class UUWorksRequestWebEnumerateUserPublishedFiles;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebRemoteStorage : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

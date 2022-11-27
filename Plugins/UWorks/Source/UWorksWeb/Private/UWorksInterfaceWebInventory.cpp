@@ -1,10 +1,10 @@
 #include "UWorksInterfaceWebInventory.h"
 
-class UUWorksRequestWebExchangeItem;
 class UUWorksRequestWebGetQuantity;
-class UUWorksRequestWebGetPriceSheet;
-class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebGetInventory;
+class UUWorksRequestWebGetPriceSheet;
+class UUWorksRequestWebExchangeItem;
+class UUWorksRequestWebGetItemDefs;
 class UUWorksRequestWebConsumeItem;
 class UUWorksRequestWebConsolidate;
 class UUWorksRequestWebAddPromoItem;

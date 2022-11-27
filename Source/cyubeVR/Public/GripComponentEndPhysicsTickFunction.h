@@ -3,7 +3,7 @@
 #include "Engine/EngineBaseTypes.h"
 #include "GripComponentEndPhysicsTickFunction.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FGripComponentEndPhysicsTickFunction : public FTickFunction {
     GENERATED_BODY()
 public:
@@ -18,3 +18,4 @@ struct TStructOpsTypeTraits<FGripComponentEndPhysicsTickFunction> : public TStru
         WithCopy = false
     };
 };
+

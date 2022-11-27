@@ -7,11 +7,11 @@
 
 class UGetGlobalAchievementPercentagesForAppNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetGlobalAchievementPercentagesForAppNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetGlobalAchievementPercentagesForAppDelegate Completed;
     
     UGetGlobalAchievementPercentagesForAppNode();

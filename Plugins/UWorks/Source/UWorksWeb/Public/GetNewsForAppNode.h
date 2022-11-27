@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetNewsForAppDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetNewsForAppDelegateDelegate.h"
 #include "GetNewsForAppNode.generated.h"
 
 class UGetNewsForAppNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetNewsForAppNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppDelegate Completed;
     
     UGetNewsForAppNode();

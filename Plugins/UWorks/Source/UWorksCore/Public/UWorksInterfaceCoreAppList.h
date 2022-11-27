@@ -1,20 +1,20 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "SteamAppUninstalledDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "SteamAppInstalledDelegateDelegate.h"
-#include "SteamAppUninstalledDelegateDelegate.h"
 #include "UWorksInterfaceCoreAppList.generated.h"
 
 class UUWorksInterfaceCoreAppList;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreAppList : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamAppInstalledDelegate SteamAppInstalled;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamAppUninstalledDelegate SteamAppUninstalled;
     
     UUWorksInterfaceCoreAppList();

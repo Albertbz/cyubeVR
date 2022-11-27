@@ -2,17 +2,17 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetQuantityDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksSteamItemDef.h"
+#include "UWorksSteamID.h"
 #include "GetQuantityNode.generated.h"
 
 class UGetQuantityNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetQuantityNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetQuantityDelegate Completed;
     
     UGetQuantityNode();

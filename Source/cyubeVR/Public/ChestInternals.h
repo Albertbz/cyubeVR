@@ -8,7 +8,7 @@
 class AInventory;
 class AChest;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AChestInternals : public AStorage {
     GENERATED_BODY()
 public:

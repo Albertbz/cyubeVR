@@ -5,15 +5,15 @@
 #include "UObject/NoExportTypes.h"
 #include "VRCharacter.generated.h"
 
-class AActor;
 class UCameraComponent;
+class AActor;
 class UMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCameraComponent* CameraRef;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Health;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UMeshComponent*> Meshes;
     
     AVRCharacter();
@@ -33,26 +33,32 @@ public:
     bool UseLightAroundValue();
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void SetViewDirection(FVector Direction);
+    
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ReduceHealthCPP(float Amount);
     
     UFUNCTION(BlueprintCallable)
     TArray<UMeshComponent*> GetMeshComponents();
     
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    FVector GetActorLocationForCameraLocationCPP(FVector NewCameraLocation);
+    
     
     // Fix for true pure virtual functions not being implemented
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool UseActorCustomLocation() override PURE_VIRTUAL(UseActorCustomLocation, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     bool TickReceiveLight() override PURE_VIRTUAL(TickReceiveLight, return false;);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginPlay(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginPlay,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     void LightInterfaceBeginDestroy(AActor* ThisActor) override PURE_VIRTUAL(LightInterfaceBeginDestroy,);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION()
     FVector GetActorCustomLocation() override PURE_VIRTUAL(GetActorCustomLocation, return FVector{};);
     
 };

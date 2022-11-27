@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
-#include "GetServersAtAddressDelegateDelegate.h"
 #include "GetServersAtAddressMinimalDelegateDelegate.h"
+#include "GetServersAtAddressDelegateDelegate.h"
+#include "UWorksRequestWeb.h"
 #include "UWorksRequestWebGetServersAtAddress.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetServersAtAddress : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetServersAtAddressDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetServersAtAddressMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetServersAtAddress();

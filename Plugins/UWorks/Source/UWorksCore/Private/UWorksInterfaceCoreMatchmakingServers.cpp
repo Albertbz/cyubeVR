@@ -1,7 +1,7 @@
 #include "UWorksInterfaceCoreMatchmakingServers.h"
 
-class UUWorksRequestCoreServerList;
 class UUWorksRequestCoreRules;
+class UUWorksRequestCoreServerList;
 class UUWorksRequestCorePlayers;
 class UUWorksRequestCorePing;
 class UUWorksInterfaceCoreMatchmakingServers;

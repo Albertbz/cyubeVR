@@ -1,32 +1,32 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EUWorksGamepadTextInputMode.h"
+#include "GamepadTextInputDismissedDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
 #include "IPCountryDelegateDelegate.h"
-#include "EUWorksGamepadTextInputMode.h"
 #include "LowBatteryPowerDelegateDelegate.h"
 #include "SteamShutdownDelegateDelegate.h"
 #include "EUWorksGamepadTextInputLineMode.h"
-#include "GamepadTextInputDismissedDelegateDelegate.h"
 #include "EUWorksNotificationPosition.h"
 #include "EUWorksUniverse.h"
 #include "UWorksInterfaceCoreUtils.generated.h"
 
 class UUWorksInterfaceCoreUtils;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreUtils : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIPCountryDelegate IPCountry;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLowBatteryPowerDelegate LowBatteryPower;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamShutdownDelegate SteamShutdown;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGamepadTextInputDismissedDelegate GamepadTextInputDismissed;
     
     UUWorksInterfaceCoreUtils();

@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GrantPackageDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
 #include "GrantPackageNode.generated.h"
 
 class UGrantPackageNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGrantPackageNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGrantPackageDelegate Completed;
     
     UGrantPackageNode();

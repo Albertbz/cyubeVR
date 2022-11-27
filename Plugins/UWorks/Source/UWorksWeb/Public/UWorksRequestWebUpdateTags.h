@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
+#include "UWorksPublishedFileID.h"
 #include "UpdateTagsDelegateDelegate.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
-#include "UWorksPublishedFileID.h"
 #include "UWorksRequestWebUpdateTags.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebUpdateTags : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpdateTagsDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUpdateTagsMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUpdateTags();

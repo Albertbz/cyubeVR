@@ -1,14 +1,14 @@
 #include "UWorksInterfaceWebEcon.h"
 
-class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeOffers;
-class UUWorksRequestWebFlushAssetAppearanceCache;
+class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebGetTradeOffer;
-class UUWorksRequestWebFlushInventoryCache;
-class UUWorksRequestWebFlushContextCache;
 class UUWorksRequestWebDeclineTradeOffer;
+class UUWorksRequestWebFlushInventoryCache;
 class UUWorksRequestWebCancelTradeOffer;
+class UUWorksRequestWebFlushContextCache;
+class UUWorksRequestWebFlushAssetAppearanceCache;
 
 void UUWorksInterfaceWebEcon::GetTradeOffersSummaryMinimal(const FString& Key, int32 TimeLastVisit, const FGetTradeOffersSummaryMinimalDelegate& Delegate) {
 }

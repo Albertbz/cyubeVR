@@ -5,10 +5,10 @@
 #include "UObject/NoExportTypes.h"
 #include "Inventory.generated.h"
 
-class AChestInternals;
 class AInventory;
+class AChestInternals;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AInventory : public AStorage {
     GENERATED_BODY()
 public:

@@ -6,13 +6,13 @@
 #include "BlockItem.generated.h"
 
 class UMaterialInstanceDynamic;
-class UTextRenderComponent;
-class UParticleSystemComponent;
 class ABlockItem;
 class UBoxComponent;
+class UTextRenderComponent;
+class UParticleSystemComponent;
 class AChunkManager;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ABlockItem : public AReceiveLightActor {
     GENERATED_BODY()
 public:
@@ -49,10 +49,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<ABlockItem*> AttachedItemsC;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* BoxCollision;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UTextRenderComponent*> TextAmounts;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -64,7 +64,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInstanceDynamic* CrystalMaterial;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UParticleSystemComponent* ChargingParticleSystem;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -6,7 +6,7 @@
 class USoundBase;
 class USoundClass;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AAudioManager : public AActor {
     GENERATED_BODY()
 public:

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
 #include "BPVRControllerProfile.h"
+#include "UObject/NoExportTypes.h"
 #include "VRGlobalSettings.generated.h"
 
-UCLASS(BlueprintType, config = Engine, DefaultConfig)
+UCLASS(Blueprintable, DefaultConfig, config = Engine)
 class UVRGlobalSettings : public UObject {
     GENERATED_BODY()
 public:

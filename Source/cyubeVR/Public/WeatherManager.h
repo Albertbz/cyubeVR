@@ -5,7 +5,7 @@
 #include "EWeather.h"
 #include "WeatherManager.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API AWeatherManager : public AActor {
     GENERATED_BODY()
 public:

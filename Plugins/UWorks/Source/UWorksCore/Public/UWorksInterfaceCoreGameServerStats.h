@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceCore.h"
 #include "ServerRequestUserStatsMinimalDelegateDelegate.h"
+#include "UWorksInterfaceCore.h"
 #include "GSStatsUnloadedDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "ServerStoreUserStatsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreGameServerStats.generated.h"
 
 class UUWorksInterfaceCoreGameServerStats;
-class UUWorksRequestCoreStoreUserStats;
 class UUWorksRequestCoreRequestUserStatsGS;
+class UUWorksRequestCoreStoreUserStats;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreGameServerStats : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGSStatsUnloadedDelegate GSStatsUnloaded;
     
     UUWorksInterfaceCoreGameServerStats();

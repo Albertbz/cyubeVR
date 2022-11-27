@@ -4,32 +4,38 @@
 #include "BenchmarkResults.h"
 #include "CubeGameInstance.generated.h"
 
-class UTextureRenderTarget2D;
-class USoundBase;
-class UTexture2D;
-class UAudioComponent;
 class UCustomBlockManager;
-class UMaterialParameterCollection;
+class USoundBase;
+class UAudioComponent;
+class UTextureRenderTarget2D;
 class UTexture2DArray;
+class UMaterialParameterCollection;
+class UTexture2D;
 
-UCLASS(NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class CYUBEVR_API UCubeGameInstance : public UGameInstance {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool LoadExistingWorld;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString WorldName;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundBase* LoadingScreenMusic;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAudioComponent* LoadingScreenMusicComponent;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UCustomBlockManager* CBM;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float STAT_TotalPlaytimeHours;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float STAT_PlaytimeMinutesThisSession;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bDoLaterCBMInit;
@@ -63,6 +69,9 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialParameterCollection* MPC;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FString> DefaultRecommendedWorkshopItems;
     
     UCubeGameInstance();
     UFUNCTION(BlueprintCallable)
@@ -99,7 +108,13 @@ public:
     void RenderCustomBlockLUT();
     
     UFUNCTION(BlueprintCallable)
+    void ReloadMainMenuModules();
+    
+    UFUNCTION(BlueprintCallable)
     void LaterCBMInit();
+    
+    UFUNCTION(BlueprintCallable)
+    void KillPIDs();
     
     UFUNCTION(BlueprintCallable)
     void GetBenchmarkResults(FBenchmarkResults& Results, bool& Valid);

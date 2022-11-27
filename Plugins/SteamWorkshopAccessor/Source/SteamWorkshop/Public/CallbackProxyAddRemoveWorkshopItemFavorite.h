@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Net/OnlineBlueprintCallProxyBase.h"
 #include "SteamDelegateOnAddRemoveWorkshopItemFavoriteDelegate.h"
+#include "Net/OnlineBlueprintCallProxyBase.h"
 #include "SteamUGCItemId.h"
 #include "CallbackProxyAddRemoveWorkshopItemFavorite.generated.h"
 
 class UCallbackProxyAddRemoveWorkshopItemFavorite;
 
-UCLASS(MinimalAPI)
+UCLASS(Blueprintable, MinimalAPI)
 class UCallbackProxyAddRemoveWorkshopItemFavorite : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnAddRemoveWorkshopItemFavorite OnSuccess;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnAddRemoveWorkshopItemFavorite OnFailure;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSteamDelegateOnAddRemoveWorkshopItemFavorite OnSteamInitFailure;
     
     UCallbackProxyAddRemoveWorkshopItemFavorite();

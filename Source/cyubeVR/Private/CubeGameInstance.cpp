@@ -36,7 +36,13 @@ void UCubeGameInstance::SetupWorldLoad(bool LoadExistingWorld_, const FString& W
 void UCubeGameInstance::RenderCustomBlockLUT_Implementation() {
 }
 
+void UCubeGameInstance::ReloadMainMenuModules() {
+}
+
 void UCubeGameInstance::LaterCBMInit() {
+}
+
+void UCubeGameInstance::KillPIDs() {
 }
 
 void UCubeGameInstance::GetBenchmarkResults(FBenchmarkResults& Results, bool& Valid) {
@@ -54,6 +60,8 @@ UCubeGameInstance::UCubeGameInstance() {
     this->LoadingScreenMusic = NULL;
     this->LoadingScreenMusicComponent = NULL;
     this->CBM = NULL;
+    this->STAT_TotalPlaytimeHours = 0.00f;
+    this->STAT_PlaytimeMinutesThisSession = 0.00f;
     this->bDoLaterCBMInit = false;
     this->AccurateSettings = false;
     this->TextureArrayMain = NULL;
@@ -65,5 +73,6 @@ UCubeGameInstance::UCubeGameInstance() {
     this->TestTexture = NULL;
     this->LUT = NULL;
     this->MPC = NULL;
+    this->DefaultRecommendedWorkshopItems.AddDefaulted(23);
 }
 

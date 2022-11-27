@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestWeb.h"
 #include "FindOrCreateLeaderboardDelegateDelegate2.h"
+#include "UWorksRequestWeb.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate2.h"
 #include "UWorksRequestWebFindOrCreateLeaderboard.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebFindOrCreateLeaderboard : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFindOrCreateLeaderboardDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFindOrCreateLeaderboardMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebFindOrCreateLeaderboard();

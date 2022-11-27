@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "UWorksSteamID.h"
-#include "SetLeaderboardScoreMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "ResetLeaderboardMinimalDelegateDelegate.h"
+#include "SetLeaderboardScoreMinimalDelegateDelegate.h"
 #include "GetLeaderboardsForGameMinimalDelegateDelegate.h"
 #include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "FindOrCreateLeaderboardMinimalDelegateDelegate2.h"
 #include "DeleteLeaderboardMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebLeaderboards.generated.h"
 
-class UUWorksRequestWebResetLeaderboard;
-class UUWorksRequestWebDeleteLeaderboard;
-class UUWorksRequestWebSetLeaderboardScore;
 class UUWorksRequestWebGetLeaderboardsForGame;
+class UUWorksRequestWebSetLeaderboardScore;
+class UUWorksRequestWebResetLeaderboard;
 class UUWorksRequestWebGetLeaderboardEntries;
 class UUWorksRequestWebFindOrCreateLeaderboard;
+class UUWorksRequestWebDeleteLeaderboard;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebLeaderboards : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

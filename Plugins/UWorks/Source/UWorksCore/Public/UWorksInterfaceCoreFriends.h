@@ -1,35 +1,35 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AvatarImageLoadedDelegateDelegate.h"
-#include "RequestClanOfficerListMinimalDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
 #include "PersonaStateChangeDelegateDelegate.h"
-#include "GameServerChangeRequestedDelegateDelegate.h"
+#include "EUWorksFriendRelationship.h"
+#include "UWorksInterfaceCore.h"
 #include "GameOverlayActivatedDelegateDelegate.h"
-#include "EUWorksOverlaySpecific.h"
-#include "EUWorksPersonaState.h"
-#include "GameLobbyJoinRequestedDelegateDelegate.h"
+#include "UWorksGameID.h"
+#include "GameServerChangeRequestedDelegateDelegate.h"
+#include "EUWorksUserRestriction.h"
 #include "FriendRichPresenceUpdateDelegateDelegate.h"
+#include "GameLobbyJoinRequestedDelegateDelegate.h"
 #include "GameRichPresenceJoinRequestedDelegateDelegate.h"
-#include "EUWorksChatEntryType.h"
+#include "AvatarImageLoadedDelegateDelegate.h"
 #include "GameConnectedClanChatMsgDelegateDelegate.h"
 #include "GameConnectedChatJoinDelegateDelegate.h"
 #include "GameConnectedChatLeaveDelegateDelegate.h"
+#include "EUWorksChatEntryType.h"
 #include "GameConnectedFriendChatMsgDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "SetPersonaNameMinimalDelegateDelegate.h"
+#include "RequestClanOfficerListMinimalDelegateDelegate.h"
 #include "JoinClanChatRoomMinimalDelegateDelegate.h"
 #include "IsFollowingMinimalDelegateDelegate.h"
-#include "EUWorksOverlayToStoreFlag.h"
+#include "EUWorksOverlayGeneric.h"
+#include "DownloadClanActivityCountsMinimalDelegateDelegate.h"
 #include "EUWorksFriendFlags.h"
-#include "EUWorksUserRestriction.h"
+#include "EUWorksPersonaState.h"
+#include "EUWorksOverlaySpecific.h"
 #include "UWorksFriendsGroupID.h"
-#include "EUWorksFriendRelationship.h"
-#include "UWorksGameID.h"
 #include "GetFollowerCountMinimalDelegateDelegate.h"
 #include "EnumerateFollowingListMinimalDelegateDelegate.h"
-#include "DownloadClanActivityCountsMinimalDelegateDelegate.h"
-#include "EUWorksOverlayGeneric.h"
+#include "EUWorksOverlayToStoreFlag.h"
 #include "UWorksInterfaceCoreFriends.generated.h"
 
 class UUWorksRequestCoreSetPersonaName;
@@ -42,41 +42,41 @@ class UUWorksRequestCoreGetFollowerCount;
 class UUWorksRequestCoreEnumerateFollowingList;
 class UUWorksRequestCoreDownloadClanActivityCounts;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreFriends : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPersonaStateChangeDelegate PersonaStateChange;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameOverlayActivatedDelegate GameOverlayActivated;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameServerChangeRequestedDelegate GameServerChangeRequested;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameLobbyJoinRequestedDelegate GameLobbyJoinRequested;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAvatarImageLoadedDelegate AvatarImageLoaded;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFriendRichPresenceUpdateDelegate FriendRichPresenceUpdate;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameRichPresenceJoinRequestedDelegate GameRichPresenceJoinRequested;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameConnectedClanChatMsgDelegate GameConnectedClanChatMsg;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameConnectedChatJoinDelegate GameConnectedChatJoin;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameConnectedChatLeaveDelegate GameConnectedChatLeave;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameConnectedFriendChatMsgDelegate GameConnectedFriendChatMsg;
     
     UUWorksInterfaceCoreFriends();

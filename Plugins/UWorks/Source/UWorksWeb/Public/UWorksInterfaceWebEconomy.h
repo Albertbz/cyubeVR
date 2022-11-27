@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "GetMarketPricesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "StartAssetTransactionMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "StartTradeMinimalDelegateDelegate.h"
+#include "StartAssetTransactionMinimalDelegateDelegate.h"
+#include "GetMarketPricesMinimalDelegateDelegate.h"
 #include "GetExportedAssetsForUserMinimalDelegateDelegate.h"
 #include "GetAssetPricesMinimalDelegateDelegate.h"
 #include "GetAssetClassInfoMinimalDelegateDelegate.h"
@@ -12,16 +12,16 @@
 #include "CanTradeMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEconomy.generated.h"
 
-class UUWorksRequestWebGetMarketPrices;
 class UUWorksRequestWebStartTrade;
 class UUWorksRequestWebStartAssetTransaction;
+class UUWorksRequestWebGetMarketPrices;
 class UUWorksRequestWebGetExportedAssetsForUser;
 class UUWorksRequestWebGetAssetPrices;
 class UUWorksRequestWebGetAssetClassInfo;
 class UUWorksRequestWebFinalizeAssetTransaction;
 class UUWorksRequestWebCanTrade;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEconomy : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

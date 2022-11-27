@@ -8,7 +8,7 @@
 
 class UTexture2D;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API APictureFrame : public AMeshObject {
     GENERATED_BODY()
 public:

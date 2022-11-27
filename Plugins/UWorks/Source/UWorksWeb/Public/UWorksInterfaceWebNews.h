@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
 #include "GetNewsForAppMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "GetNewsForAppAuthedMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebNews.generated.h"
 
-class UUWorksRequestWebGetNewsForApp;
 class UUWorksRequestWebGetNewsForAppAuthed;
+class UUWorksRequestWebGetNewsForApp;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebNews : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

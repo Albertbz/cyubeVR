@@ -6,21 +6,21 @@
 #include "UWorksSteamLeaderboardEntries.h"
 #include "BenchmarkLeaderboardsCPP.generated.h"
 
-class UGameInstance;
-class ULeaderboardEntryCPP;
 class UScrollBox;
+class ULeaderboardEntryCPP;
+class UGameInstance;
 
-UCLASS(EditInlineNew)
+UCLASS(Blueprintable, EditInlineNew)
 class CYUBEVR_API UBenchmarkLeaderboardsCPP : public UUserWidget {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UScrollBox* ScrollBox_Entries;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UUserWidget> EntryWidgetClass;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<ULeaderboardEntryCPP*> FakeEntryList;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -5,14 +5,14 @@
 #include "GetNewsForAppMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetNewsForApp.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebGetNewsForApp : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetNewsForAppMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebGetNewsForApp();

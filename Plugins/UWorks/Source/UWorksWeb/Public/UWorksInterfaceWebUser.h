@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUserGroupListMinimalDelegateDelegate.h"
+#include "GrantPackageMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
 #include "ResolveVanityURLMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
-#include "GrantPackageMinimalDelegateDelegate.h"
+#include "GetUserGroupListMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipMinimalDelegateDelegate.h"
 #include "GetPublisherAppOwnershipChangesMinimalDelegateDelegate.h"
 #include "GetPlayerSummariesMinimalDelegateDelegate.h"
@@ -14,18 +14,18 @@
 #include "CheckAppOwnershipMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebUser.generated.h"
 
-class UUWorksRequestWebGrantPackage;
-class UUWorksRequestWebCheckAppOwnership;
+class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebResolveVanityURL;
+class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetUserGroupList;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
-class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;
 class UUWorksRequestWebGetPlayerBans;
 class UUWorksRequestWebGetFriendList;
 class UUWorksRequestWebGetAppPriceInfo;
+class UUWorksRequestWebCheckAppOwnership;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebUser : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

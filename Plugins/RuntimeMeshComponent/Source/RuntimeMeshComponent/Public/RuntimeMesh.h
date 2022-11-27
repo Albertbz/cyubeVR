@@ -1,43 +1,43 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RuntimeMeshProviderTargetInterface.h"
-#include "RuntimeMeshAsyncBodySetupData.h"
+#include "RuntimeMeshCollisionHitInfo.h"
 #include "Interfaces/Interface_CollisionDataProvider.h"
+#include "RuntimeMeshCollisionSourceSectionInfo.h"
+#include "RuntimeMeshAsyncBodySetupData.h"
 #include "RuntimeMeshMaterialSlot.h"
 #include "RuntimeMeshCollisionUpdatedDelegateDelegate.h"
-#include "RuntimeMeshCollisionSourceSectionInfo.h"
 #include "UObject/NoExportTypes.h"
-#include "RuntimeMeshCollisionHitInfo.h"
 #include "RuntimeMesh.generated.h"
 
 class URuntimeMeshProvider;
 class UBodySetup;
 
-UCLASS()
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMesh : public URuntimeMeshProviderTargetInterface, public IInterface_CollisionDataProvider {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URuntimeMeshProvider* MeshProviderPtr;
     
-    UPROPERTY(BlueprintReadWrite, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UBodySetup* BodySetup;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FRuntimeMeshCollisionSourceSectionInfo> CollisionSource;
     
-    UPROPERTY(BlueprintReadWrite, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FRuntimeMeshAsyncBodySetupData> AsyncBodySetupQueue;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FRuntimeMeshMaterialSlot> MaterialSlots;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FName, int32> SlotNameLookup;
     
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeMeshCollisionUpdatedDelegate CollisionUpdated;
     
     URuntimeMesh();

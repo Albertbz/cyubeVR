@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "CancelAppListingsForUserDelegateDelegate.h"
-#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "CancelAppListingsForUserMinimalDelegateDelegate.h"
 #include "UWorksRequestWebCancelAppListingsForUser.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebCancelAppListingsForUser : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelAppListingsForUserDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCancelAppListingsForUserMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebCancelAppListingsForUser();

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "UWorksSteamID.h"
-#include "GetSteamLevelMinimalDelegateDelegate.h"
-#include "UWorksPlaySessions.h"
 #include "RecordOfflinePlaytimeMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksPlaySessions.h"
 #include "IsPlayingSharedGameMinimalDelegateDelegate.h"
+#include "GetSteamLevelMinimalDelegateDelegate.h"
 #include "GetRecentlyPlayedGamesMinimalDelegateDelegate.h"
 #include "GetOwnedGamesMinimalDelegateDelegate.h"
 #include "GetCommunityBadgeProgressMinimalDelegateDelegate.h"
@@ -20,7 +20,7 @@ class UUWorksRequestWebGetOwnedGames;
 class UUWorksRequestWebGetCommunityBadgeProgress;
 class UUWorksRequestWebGetBadges;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPlayer : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

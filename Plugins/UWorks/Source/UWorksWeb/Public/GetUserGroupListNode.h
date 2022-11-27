@@ -7,11 +7,11 @@
 
 class UGetUserGroupListNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetUserGroupListNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetUserGroupListDelegate Completed;
     
     UGetUserGroupListNode();

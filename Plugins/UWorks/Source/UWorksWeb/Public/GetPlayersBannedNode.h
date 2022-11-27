@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetPlayersBannedDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "GetPlayersBannedNode.generated.h"
 
 class UGetPlayersBannedNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UGetPlayersBannedNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetPlayersBannedDelegate Completed;
     
     UGetPlayersBannedNode();

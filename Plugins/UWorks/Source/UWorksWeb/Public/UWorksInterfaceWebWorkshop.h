@@ -4,18 +4,18 @@
 #include "UWorksAssociatedWorkshopFiles.h"
 #include "UWorksPartnerAccounts.h"
 #include "SetItemPaymentRulesMinimalDelegateDelegate.h"
-#include "UWorksLanguages.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "GetItemDailyRevenueMinimalDelegateDelegate.h"
 #include "GetFinalizedContributorsMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebWorkshop.generated.h"
 
 class UUWorksRequestWebSetItemPaymentRules;
-class UUWorksRequestWebGetItemDailyRevenue;
 class UUWorksRequestWebPopulateItemDescriptions;
+class UUWorksRequestWebGetItemDailyRevenue;
 class UUWorksRequestWebGetFinalizedContributors;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebWorkshop : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

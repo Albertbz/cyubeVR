@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "UserVoteSummaryDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebUserVoteSummary.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksRequestWebUserVoteSummary : public UUWorksRequestWeb {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserVoteSummaryDelegate OnRequestCompleted;
     
-    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUserVoteSummaryMinimalDelegate OnRequestCompletedMinimal;
     
     UUWorksRequestWebUserVoteSummary();

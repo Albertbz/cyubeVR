@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FileWriteAsyncMinimalDelegateDelegate.h"
-#include "UWorksUGCFileWriteStreamHandle.h"
 #include "UWorksInterfaceCore.h"
 #include "EUWorksRemoteStoragePlatform.h"
+#include "UWorksUGCFileWriteStreamHandle.h"
+#include "FileWriteAsyncMinimalDelegateDelegate.h"
 #include "FileReadAsyncMinimalDelegateDelegate.h"
 #include "UWorksInterfaceCoreRemoteStorage.generated.h"
 
+class UUWorksInterfaceCoreRemoteStorage;
 class UUWorksRequestCoreFileWriteAsync;
 class UUWorksRequestCoreFileReadAsync;
-class UUWorksInterfaceCoreRemoteStorage;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreRemoteStorage : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:

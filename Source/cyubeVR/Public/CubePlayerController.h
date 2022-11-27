@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameFramework/PlayerController.h"
 #include "EBlockTypeBP.h"
+#include "GameFramework/PlayerController.h"
 #include "CubePlayerController.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ACubePlayerController : public APlayerController {
     GENERATED_BODY()
 public:

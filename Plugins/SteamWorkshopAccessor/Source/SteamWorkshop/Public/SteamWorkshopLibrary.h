@@ -1,29 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamUGCUpdateHandle.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "WorkshopItemDownloadInfo.h"
+#include "SteamUGCItemId.h"
+#include "EResultBP.h"
 #include "SteamWorkshopItemInstallInfo.h"
 #include "SteamDepotId.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "EResultBP.h"
-#include "EItemStateBP.h"
-#include "SteamUGCItemId.h"
-#include "WorkshopItemUpdateInfo.h"
 #include "SteamUGCQueryHandle.h"
-#include "EItemStatisticBP.h"
+#include "SteamUGCUpdateHandle.h"
+#include "EItemStateBP.h"
 #include "UInt64.h"
-#include "WorkshopItemDownloadInfo.h"
+#include "WorkshopItemUpdateInfo.h"
+#include "EItemStatisticBP.h"
+#include "SteamKeyValuePair.h"
 #include "SteamDelegateOnWorkshopItemDownloadedDynDelegate.h"
 #include "SteamWorkshopItemDetails.h"
 #include "UObject/NoExportTypes.h"
-#include "SteamKeyValuePair.h"
 #include "SteamWorkshopUpdateDetails.h"
 #include "ESteamSupportedLanguages.h"
 #include "ESteamItemVisibility.h"
-#include "SteamUGCQueryParameterTagsAllUser.h"
 #include "SteamUGCQueryParameterTagsAllUserDetails.h"
+#include "SteamUGCQueryParameterTagsAllUser.h"
 #include "SteamWorkshopLibrary.generated.h"
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class STEAMWORKSHOP_API USteamWorkshopLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
@@ -55,7 +55,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<EItemStateBP> SteamWorkshop_GetItemState(const FSteamUGCItemId& ItemId);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static bool SteamWorkshop_GetItemQueryStatistic(const FSteamUGCQueryHandle& queryHandle, const int32 ItemIndex, const TEnumAsByte<EItemStatisticBP> statToRetrieve, FUInt64& StatValue);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

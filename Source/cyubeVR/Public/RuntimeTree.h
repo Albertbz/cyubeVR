@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETreeType.h"
 #include "GameFramework/Actor.h"
+#include "ETreeType.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeTree.generated.h"
 
-class UProceduralMeshComponent;
-class AChunkManager;
 class UStaticMesh;
+class AChunkManager;
+class UProceduralMeshComponent;
 
-UCLASS()
+UCLASS(Blueprintable)
 class CYUBEVR_API ARuntimeTree : public AActor {
     GENERATED_BODY()
 public:
@@ -25,7 +25,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsFalling;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UProceduralMeshComponent* PMC;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

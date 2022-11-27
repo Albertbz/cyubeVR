@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksInterfaceWeb.h"
-#include "UWorksPublishedFileID.h"
 #include "SetDeveloperMetadataMinimalDelegateDelegate.h"
 #include "UpdateTagsMinimalDelegateDelegate.h"
-#include "UWorksRequiredKVTags.h"
+#include "UWorksInterfaceWeb.h"
+#include "UWorksPublishedFileID.h"
 #include "QueryFilesMinimalDelegateDelegate.h"
+#include "UWorksRequiredKVTags.h"
 #include "UWorksInterfaceWebPublishedFile.generated.h"
 
 class UUWorksRequestWebUpdateTags;
 class UUWorksRequestWebSetDeveloperMetadata;
 class UUWorksRequestWebQueryFiles;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebPublishedFile : public UUWorksInterfaceWeb {
     GENERATED_BODY()
 public:

@@ -2,31 +2,31 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+#include "BPActorGripInformation.h"
 #include "BPLowPassPeakFilter.h"
+#include "UObject/NoExportTypes.h"
 #include "BPEuroLowPassFilter.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "EBPHMDWornState.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Engine/NetSerialization.h"
 #include "Transform_NetQuantize.h"
+#include "EBPHMDWornState.h"
 #include "EBPHMDDeviceType.h"
 #include "InputCoreTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "BPActorGripInformation.h"
 #include "BPGripPair.h"
 #include "VRExpansionFunctionLibrary.generated.h"
 
-class UPrimitiveComponent;
 class USplineComponent;
-class USplineMeshComponent;
 class UObject;
+class UPrimitiveComponent;
+class USplineMeshComponent;
 class AActor;
 class UGripMotionControllerComponent;
 class USceneComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UVRExpansionFunctionLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
@@ -52,7 +52,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void ResetEuroSmoothingFilter(UPARAM(Ref) FBPEuroLowPassFilter& TargetEuroFilter);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static void NonAuthorityMinimumAreaRectangle(UObject* WorldContextObject, const TArray<FVector>& InVerts, const FVector& SampleSurfaceNormal, FVector& OutRectCenter, FRotator& OutRectRotation, float& OutSideLengthX, float& OutSideLengthY, bool bDebugDraw);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -115,7 +115,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UGripMotionControllerComponent* Conv_GripPairToMotionController(const FBPGripPair& GripPair);
     
-    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UFUNCTION(BlueprintPure)
     static uint8 Conv_GripPairToGripID(const FBPGripPair& GripPair);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

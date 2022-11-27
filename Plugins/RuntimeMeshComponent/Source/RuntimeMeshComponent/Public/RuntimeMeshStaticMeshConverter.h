@@ -6,11 +6,11 @@
 #include "RuntimeMeshRenderableMeshData.h"
 #include "RuntimeMeshStaticMeshConverter.generated.h"
 
-class UStaticMeshComponent;
 class UStaticMesh;
 class URuntimeMeshComponent;
+class UStaticMeshComponent;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class RUNTIMEMESHCOMPONENT_API URuntimeMeshStaticMeshConverter : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:

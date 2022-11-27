@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "RequestPlayerGameBanDelegateDelegate.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
 #include "RequestPlayerGameBanNode.generated.h"
 
 class URequestPlayerGameBanNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API URequestPlayerGameBanNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRequestPlayerGameBanDelegate Completed;
     
     URequestPlayerGameBanNode();

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksInterfaceCore.h"
 #include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "DlcInstalledDelegateDelegate.h"
-#include "UWorksInterfaceCore.h"
 #include "NewUrlLaunchParametersDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreApps.generated.h"
@@ -10,14 +10,14 @@
 class UUWorksRequestCoreGetFileDetails;
 class UUWorksInterfaceCoreApps;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class UWORKSCORE_API UUWorksInterfaceCoreApps : public UUWorksInterfaceCore {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDlcInstalledDelegate DlcInstalled;
     
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNewUrlLaunchParametersDelegate NewUrlLaunchParameters;
     
     UUWorksInterfaceCoreApps();

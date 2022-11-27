@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "SetUGCUsedByGCDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "SetUGCUsedByGCDelegateDelegate.h"
 #include "SetUGCUsedByGCNode.generated.h"
 
 class USetUGCUsedByGCNode;
 
-UCLASS()
+UCLASS(Blueprintable)
 class UWORKSWEB_API USetUGCUsedByGCNode : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSetUGCUsedByGCDelegate Completed;
     
     USetUGCUsedByGCNode();
