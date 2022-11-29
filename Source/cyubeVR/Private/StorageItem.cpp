@@ -2,7 +2,7 @@
 
 FStorageItem::FStorageItem() {
     this->Type = EBlockTypeBP::Stone;
-    this->Amount = 0;
+    this->amount = 0;
     this->ChargeState = 0.00f;
 }
 

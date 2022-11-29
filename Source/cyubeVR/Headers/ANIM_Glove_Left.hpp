@@ -1,0 +1,95 @@
+#ifndef UE4SS_SDK_ANIM_Glove_Left_HPP
+#define UE4SS_SDK_ANIM_Glove_Left_HPP
+
+class UANIM_Glove_Left_C : public UAnimInstance
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    FAnimNode_Root AnimGraphNode_Root;
+    FAnimNode_SteamVRInputAnimPose AnimGraphNode_SteamVRInputAnimPose;
+    FAnimNode_TwoWayBlend AnimGraphNode_TwoWayBlend_1;
+    FAnimNode_SaveCachedPose AnimGraphNode_SaveCachedPose_1;
+    FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_3;
+    FAnimNode_SteamVRSetWristTransform AnimGraphNode_SteamVRSetWristTransform;
+    FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_2;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_15;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_14;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_13;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_12;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_11;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_10;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_9;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_8;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_7;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_6;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_5;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_4;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_3;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_2;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult_1;
+    FAnimNode_TransitionResult AnimGraphNode_TransitionResult;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_9;
+    FAnimNode_StateResult AnimGraphNode_StateResult_8;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_8;
+    FAnimNode_StateResult AnimGraphNode_StateResult_7;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_7;
+    FAnimNode_StateResult AnimGraphNode_StateResult_6;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_6;
+    FAnimNode_StateResult AnimGraphNode_StateResult_5;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_5;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_4;
+    FAnimNode_TwoWayBlend AnimGraphNode_TwoWayBlend;
+    FAnimNode_StateResult AnimGraphNode_StateResult_4;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_3;
+    FAnimNode_StateResult AnimGraphNode_StateResult_3;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_2;
+    FAnimNode_StateResult AnimGraphNode_StateResult_2;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer_1;
+    FAnimNode_StateResult AnimGraphNode_StateResult_1;
+    FAnimNode_SequencePlayer AnimGraphNode_SequencePlayer;
+    FAnimNode_StateResult AnimGraphNode_StateResult;
+    FAnimNode_StateMachine AnimGraphNode_StateMachine;
+    FAnimNode_BlendListByBool AnimGraphNode_BlendListByBool;
+    FAnimNode_SaveCachedPose AnimGraphNode_SaveCachedPose;
+    FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose_1;
+    FAnimNode_UseCachedPose AnimGraphNode_UseCachedPose;
+    FSteamVRSkeletonTransform SteamVRTransformWithController;
+    FSteamVRSkeletonTransform SteamVRTransformWithoutController;
+    TEnumAsByte<GripEnum> GripState;
+    TEnumAsByte<HandPoseEnum> GripType;
+    EControllerHand HandType;
+    float Squeeze;
+    float Grip;
+    EMotionRange MotionRange;
+    float InterpolateSpeed;
+    bool ProceduralSkeletonEnabled;
+    bool MirrorSkeletalPose;
+
+    void AnimGraph(FPoseLink& AnimGraph);
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TwoWayBlend_6149ACDD491CE81E1BCEB7A897EA8133();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_SteamVRInputAnimPose_C3AA0D9746FCD466BE21998591DDCEF6();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TwoWayBlend_BA4FF2474837DCE34CF03A99A8CBBEB7();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_6392C56F4123269DDF704C9A3994652A();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_FED62521492C1DAFDFDAD4A7C77D677F();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_8CF3A48A47854ECD4C1C59B0DFD4FF55();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_2B3B99AD442650095D7818B7C40A88BA();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_7BB6E6C749A0F2FB3C2DA6827F92A7CB();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_DFAA0BF749F89E0ABD73A1B5A7B4FFDB();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_6EFF802E416C8CD46988F580943B1F40();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_0F19408D4AE75B52F6EC06AD5D085676();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_7CE552A44904B4C7FAA146B6C003B522();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_5170BF77472E07B682D78698D450620F();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_CE30B744462F57DDD990B0B63AE1521C();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_EC924E7344ADBEA01E0493854E74D4B2();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_3EB3AD6D4936E6306D81678105D92256();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_EA9381424119079EC86FB688B91D731D();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_7F051C8D4EC6DF89882665AE907A60E3();
+    void EvaluateGraphExposedInputs_ExecuteUbergraph_ANIM_Glove_Left_AnimGraphNode_TransitionResult_B8B29F0743314104EF340BA9DD8C0BFF();
+    void BlueprintUpdateAnimation(float DeltaTimeX);
+    void SetSqueeze(float Value);
+    void SetGripState(TEnumAsByte<GripEnum> Value);
+    void SetGripType(TEnumAsByte<HandPoseEnum> Value);
+    void SetHandType(EControllerHand Value);
+    void ExecuteUbergraph_ANIM_Glove_Left(int32 EntryPoint);
+};
+
+#endif
