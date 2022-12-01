@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetPlayersBannedDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetPlayersBannedDelegateDelegate.h"
 #include "GetPlayersBannedNode.generated.h"
 
 class UGetPlayersBannedNode;

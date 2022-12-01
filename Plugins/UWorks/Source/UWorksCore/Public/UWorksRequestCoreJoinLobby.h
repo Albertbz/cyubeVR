@@ -24,7 +24,7 @@ public:
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetOutput(FUWorksSteamID& SteamIDLobby, TArray<uint8>& ChatPermissions, bool& bLocked, EUWorksChatRoomEnterResponse& ChatRoomEnterResponse);
     
     UFUNCTION(BlueprintCallable)

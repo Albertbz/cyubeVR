@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "ItemVoteSummaryMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "UserVoteSummaryMinimalDelegateDelegate.h"
-#include "ItemVoteSummaryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksInterfaceWebPublishedItemVoting.generated.h"
 
 class UUWorksRequestWebUserVoteSummary;

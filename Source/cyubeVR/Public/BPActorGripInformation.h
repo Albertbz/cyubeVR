@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "EGripTargetType.h"
-#include "EGripCollisionType.h"
-#include "EGripMovementReplicationSettings.h"
-#include "EGripLateUpdateSettings.h"
 #include "Transform_NetQuantize.h"
+#include "EGripCollisionType.h"
+#include "EGripLateUpdateSettings.h"
+#include "EGripMovementReplicationSettings.h"
 #include "BPAdvGripSettings.h"
-#include "BPSecondaryGripInfo.h"
 #include "UObject/NoExportTypes.h"
+#include "BPSecondaryGripInfo.h"
 #include "BPActorGripInformation.generated.h"
 
 class UObject;
@@ -16,7 +16,7 @@ USTRUCT(BlueprintType)
 struct FBPActorGripInformation {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     uint8 GripID;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

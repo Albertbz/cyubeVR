@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "WorkshopItemDownloadInfo.h"
 #include "SteamUGCItemId.h"
+#include "ESteamSupportedLanguages.h"
 #include "EResultBP.h"
-#include "SteamWorkshopItemInstallInfo.h"
+#include "UInt64.h"
 #include "SteamDepotId.h"
-#include "SteamUGCQueryHandle.h"
+#include "WorkshopItemUpdateInfo.h"
 #include "SteamUGCUpdateHandle.h"
 #include "EItemStateBP.h"
-#include "UInt64.h"
-#include "WorkshopItemUpdateInfo.h"
+#include "SteamUGCQueryHandle.h"
+#include "SteamWorkshopUpdateDetails.h"
 #include "EItemStatisticBP.h"
-#include "SteamKeyValuePair.h"
+#include "SteamWorkshopItemInstallInfo.h"
+#include "WorkshopItemDownloadInfo.h"
 #include "SteamDelegateOnWorkshopItemDownloadedDynDelegate.h"
 #include "SteamWorkshopItemDetails.h"
 #include "UObject/NoExportTypes.h"
-#include "SteamWorkshopUpdateDetails.h"
-#include "ESteamSupportedLanguages.h"
+#include "SteamKeyValuePair.h"
 #include "ESteamItemVisibility.h"
 #include "SteamUGCQueryParameterTagsAllUserDetails.h"
 #include "SteamUGCQueryParameterTagsAllUser.h"
@@ -55,7 +55,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<EItemStateBP> SteamWorkshop_GetItemState(const FSteamUGCItemId& ItemId);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool SteamWorkshop_GetItemQueryStatistic(const FSteamUGCQueryHandle& queryHandle, const int32 ItemIndex, const TEnumAsByte<EItemStatisticBP> statToRetrieve, FUInt64& StatValue);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

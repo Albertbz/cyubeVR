@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetServerListMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetServerListDelegateDelegate.h"
+#include "GetServerListMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetServerList.generated.h"
 
 UCLASS(Blueprintable)

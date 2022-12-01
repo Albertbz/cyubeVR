@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EUWorksResult.h"
 #include "RequestEligiblePromoItemDefinitionsIDsDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "CoreRequestEligiblePromoItemDefinitionsIDsNode.generated.h"
 

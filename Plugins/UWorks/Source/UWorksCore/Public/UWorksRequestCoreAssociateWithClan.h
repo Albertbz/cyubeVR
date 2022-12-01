@@ -3,8 +3,8 @@
 #include "UWorksRequestCore.h"
 #include "AssociateWithClanDelegateDelegate.h"
 #include "AssociateWithClanMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestCoreAssociateWithClan.generated.h"
 
 UCLASS(Blueprintable)

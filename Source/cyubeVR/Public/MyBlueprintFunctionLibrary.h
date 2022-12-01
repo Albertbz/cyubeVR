@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PerEyeRaw.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "EBlockTypeBP.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "PerEyeRaw.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "MyBlueprintFunctionLibrary.generated.h"
 
-class UActorComponent;
-class UTexture2D;
+class UTextureRenderTarget2D;
 class UObject;
 class ADynamicResolutionScalingActor;
+class UActorComponent;
 class UTexture;
-class UTextureRenderTarget2D;
 class UWidget;
+class UTexture2D;
 class UStaticMesh;
 class UProceduralMeshComponent;
 
@@ -86,7 +86,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static void LookAtWidgetDebug(TArray<UWidget*> Widgets);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static UTexture2D* LoadTexture2D_FromFile(const FString& FullFilePath, bool& IsValid, int32& Width, int32& Height, TEnumAsByte<EPixelFormat> PixelFormat, bool bGenerateMips);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

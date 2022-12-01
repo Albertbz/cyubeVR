@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "ComputeNewPlayerCompatibilityDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "ComputeNewPlayerCompatibilityMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestCoreComputeNewPlayerCompatibility.generated.h"
 

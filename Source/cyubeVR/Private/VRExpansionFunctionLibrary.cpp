@@ -3,8 +3,8 @@
 
 class USplineComponent;
 class UPrimitiveComponent;
-class UObject;
 class USplineMeshComponent;
+class UObject;
 class AActor;
 class UGripMotionControllerComponent;
 class USceneComponent;

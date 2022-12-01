@@ -3,9 +3,9 @@
 #include "LivCaptureBase.h"
 #include "LivCaptureMeshClipPlanePostProcess.generated.h"
 
+class UTextureRenderTarget2D;
 class USceneCaptureComponent2D;
 class ULivClipPlane;
-class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class LIV_API ULivCaptureMeshClipPlanePostProcess : public ULivCaptureBase {

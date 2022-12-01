@@ -6,9 +6,9 @@
 #include "LivWorldSubsystem.generated.h"
 
 class UCameraComponent;
-class ULivCaptureBase;
 class ALivCameraController;
 class USceneComponent;
+class ULivCaptureBase;
 
 UCLASS(Blueprintable)
 class LIV_API ULivWorldSubsystem : public UWorldSubsystem {

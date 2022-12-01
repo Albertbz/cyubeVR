@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetUGCFileDetailsDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetUGCFileDetailsDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "GetUGCFileDetailsNode.generated.h"
 

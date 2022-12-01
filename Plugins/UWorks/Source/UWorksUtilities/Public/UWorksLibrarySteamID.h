@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksUniverse.h"
-#include "UWorksLibrary.h"
 #include "EUWorksAccountType.h"
+#include "EUWorksUniverse.h"
 #include "UWorksSteamID.h"
+#include "UWorksLibrary.h"
 #include "UWorksLibrarySteamID.generated.h"
 
 UCLASS(Blueprintable)

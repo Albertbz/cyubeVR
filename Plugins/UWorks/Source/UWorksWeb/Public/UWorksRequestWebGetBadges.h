@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetBadgesDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "GetBadgesMinimalDelegateDelegate.h"
+#include "GetBadgesDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetBadgesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetBadges.generated.h"
 
 UCLASS(Blueprintable)

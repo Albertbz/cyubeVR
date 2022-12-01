@@ -1,7 +1,7 @@
 #include "UWorksInterfaceWebWorkshop.h"
 
-class UUWorksRequestWebSetItemPaymentRules;
 class UUWorksRequestWebPopulateItemDescriptions;
+class UUWorksRequestWebSetItemPaymentRules;
 class UUWorksRequestWebGetItemDailyRevenue;
 class UUWorksRequestWebGetFinalizedContributors;
 

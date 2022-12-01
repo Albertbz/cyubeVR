@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "AssociateWithClanDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "CoreAssociateWithClanNode.generated.h"
 
 class UCoreAssociateWithClanNode;

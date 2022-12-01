@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "RankedByPublicationOrderDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RankedByPublicationOrderDelegateDelegate.h"
 #include "UWorksRequestWebRankedByPublicationOrder.generated.h"
 
 UCLASS(Blueprintable)

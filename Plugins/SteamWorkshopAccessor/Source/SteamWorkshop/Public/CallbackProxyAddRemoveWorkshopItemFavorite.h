@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamDelegateOnAddRemoveWorkshopItemFavoriteDelegate.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamDelegateOnAddRemoveWorkshopItemFavoriteDelegate.h"
 #include "SteamUGCItemId.h"
 #include "CallbackProxyAddRemoveWorkshopItemFavorite.generated.h"
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LightReceiveInterface.h"
 #include "GameFramework/Actor.h"
+#include "LightReceiveInterface.h"
 #include "UObject/NoExportTypes.h"
 #include "ReceiveLightActor.generated.h"
 

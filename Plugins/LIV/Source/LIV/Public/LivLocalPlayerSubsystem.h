@@ -7,10 +7,10 @@
 #include "LivLocalPlayerSubsystem.generated.h"
 
 class UPrimitiveComponent;
+class ULivCaptureBase;
+class ULivWorldSubsystem;
 class ULocalPlayer;
 class AActor;
-class ULivWorldSubsystem;
-class ULivCaptureBase;
 
 UCLASS(Blueprintable)
 class LIV_API ULivLocalPlayerSubsystem : public ULocalPlayerSubsystem {

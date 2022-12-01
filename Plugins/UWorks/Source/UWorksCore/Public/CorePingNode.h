@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksServerInfo.h"
+#include "Kismet/BlueprintAsyncActionBase.h"
 #include "PingDelegateDelegate.h"
 #include "CorePingNode.generated.h"
 

@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "LivThirdPersonShotActor.generated.h"
 
-class ULivShotComponent;
 class ULivSpringArmComponent;
+class ULivShotComponent;
 class ALivCameraController;
 class ULivCaptureBase;
 

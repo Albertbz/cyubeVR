@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "UWorksSteamID.h"
 #include "GetInventoryDelegateDelegate.h"
 #include "GetInventoryMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGetInventory.generated.h"
 
 UCLASS(Blueprintable)

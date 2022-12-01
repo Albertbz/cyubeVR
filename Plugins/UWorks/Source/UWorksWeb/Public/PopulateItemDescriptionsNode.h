@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UWorksLanguages.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "PopulateItemDescriptionsDelegateDelegate.h"
-#include "UWorksLanguages.h"
 #include "PopulateItemDescriptionsNode.generated.h"
 
 class UPopulateItemDescriptionsNode;

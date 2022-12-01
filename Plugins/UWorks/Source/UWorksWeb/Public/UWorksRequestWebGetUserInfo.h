@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetUserInfoDelegateDelegate.h"
-#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetUserInfoMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetUserInfo.generated.h"
 
 UCLASS(Blueprintable)

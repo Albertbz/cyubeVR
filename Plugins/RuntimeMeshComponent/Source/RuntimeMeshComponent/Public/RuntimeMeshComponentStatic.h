@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "RuntimeMeshComponent.h"
-#include "RuntimeMeshCollisionSettings.h"
+#include "UObject/NoExportTypes.h"
+#include "RuntimeMeshRenderableMeshData.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "RuntimeMeshTangent.h"
-#include "RuntimeMeshRenderableMeshData.h"
+#include "RuntimeMeshCollisionSettings.h"
 #include "RuntimeMeshCollisionData.h"
 #include "RuntimeMeshSectionProperties.h"
 #include "UObject/NoExportTypes.h"
@@ -14,8 +14,8 @@
 #include "RuntimeMeshComponentStatic.generated.h"
 
 class URuntimeMeshModifierAdjacency;
-class URuntimeMesh;
 class URuntimeMeshProviderStatic;
+class URuntimeMesh;
 class URuntimeMeshModifierNormals;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

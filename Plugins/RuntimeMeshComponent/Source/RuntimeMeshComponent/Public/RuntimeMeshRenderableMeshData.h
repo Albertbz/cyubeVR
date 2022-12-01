@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "RuntimeMeshVertexPositionStream.h"
 #include "RuntimeMeshVertexTangentStream.h"
-#include "RuntimeMeshTriangleStream.h"
 #include "RuntimeMeshVertexColorStream.h"
 #include "RuntimeMeshVertexTexCoordStream.h"
+#include "RuntimeMeshTriangleStream.h"
 #include "RuntimeMeshRenderableMeshData.generated.h"
 
 USTRUCT(BlueprintType)

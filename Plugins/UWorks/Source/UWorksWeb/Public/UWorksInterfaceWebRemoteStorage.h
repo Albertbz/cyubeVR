@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
-#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UnsubscribePublishedFileMinimalDelegateDelegate.h"
 #include "SubscribePublishedFileMinimalDelegateDelegate.h"
+#include "SetUGCUsedByGCMinimalDelegateDelegate.h"
 #include "GetUGCFileDetailsMinimalDelegateDelegate.h"
 #include "GetPublishedFileDetailsMinimalDelegateDelegate.h"
 #include "GetCollectionDetailsMinimalDelegateDelegate.h"
@@ -12,14 +12,14 @@
 #include "EnumerateUserPublishedFilesMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebRemoteStorage.generated.h"
 
-class UUWorksRequestWebSubscribePublishedFile;
-class UUWorksRequestWebUnsubscribePublishedFile;
 class UUWorksRequestWebSetUGCUsedByGC;
+class UUWorksRequestWebUnsubscribePublishedFile;
+class UUWorksRequestWebSubscribePublishedFile;
 class UUWorksRequestWebGetUGCFileDetails;
+class UUWorksRequestWebEnumerateUserPublishedFiles;
 class UUWorksRequestWebGetPublishedFileDetails;
 class UUWorksRequestWebGetCollectionDetails;
 class UUWorksRequestWebEnumerateUserSubscribedFiles;
-class UUWorksRequestWebEnumerateUserPublishedFiles;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebRemoteStorage : public UUWorksInterfaceWeb {

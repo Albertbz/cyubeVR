@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetNumberOfCurrentPlayersDelegateDelegate2.h"
 #include "GetNumberOfCurrentPlayersNode.generated.h"
 
 class UGetNumberOfCurrentPlayersNode;

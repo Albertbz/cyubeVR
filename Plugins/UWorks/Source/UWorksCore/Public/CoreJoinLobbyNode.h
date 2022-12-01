@@ -16,7 +16,7 @@ public:
     FJoinLobbyDelegate Completed;
     
     UCoreJoinLobbyNode();
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRequestCompleted(bool bSuccessful, FUWorksSteamID SteamIDLobby, const TArray<uint8>& ChatPermissions, bool bLocked, EUWorksChatRoomEnterResponse ChatRoomEnterResponse);
     
     UFUNCTION(BlueprintCallable)

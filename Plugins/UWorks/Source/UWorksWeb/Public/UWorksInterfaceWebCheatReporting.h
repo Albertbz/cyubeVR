@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
-#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
-#include "UWorksInterfaceWeb.h"
 #include "RequestVacStatusForUserMinimalDelegateDelegate.h"
+#include "UWorksInterfaceWeb.h"
 #include "StartSecureMultiplayerSessionMinimalDelegateDelegate.h"
-#include "GetCheatingReportsMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "RequestPlayerGameBanMinimalDelegateDelegate.h"
 #include "ReportPlayerCheatingMinimalDelegateDelegate.h"
 #include "ReportCheatDataMinimalDelegateDelegate.h"
 #include "RemovePlayerGameBanMinimalDelegateDelegate.h"
+#include "GetCheatingReportsMinimalDelegateDelegate.h"
+#include "EndSecureMultiplayerSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebCheatReporting.generated.h"
 
 class UUWorksRequestWebStartSecureMultiplayerSession;

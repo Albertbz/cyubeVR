@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "LightReceiveInterface.h"
 #include "Engine/EngineTypes.h"
+#include "LightReceiveInterface.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "DeerCPP.generated.h"
 
-class AActor;
 class UMeshComponent;
 class AChunkManager;
+class AActor;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API ADeerCPP : public ACharacter, public ILightReceiveInterface {
@@ -49,7 +49,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void StartMoving();
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetMobilityAllEvent(EComponentMobility::Type NewMobility);
     
     UFUNCTION(BlueprintCallable)

@@ -1,7 +1,7 @@
 #include "ModdingFunctionLibrary.h"
 
-class AInventory;
 class UObject;
+class AInventory;
 
 bool UModdingFunctionLibrary::WriteStringToFileInModFolder(const FString& ModName, const FString& Filename, const FString& StringToWrite) {
     return false;

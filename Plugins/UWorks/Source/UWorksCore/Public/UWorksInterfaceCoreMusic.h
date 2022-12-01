@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VolumeHasChangedDelegateDelegate.h"
 #include "UWorksInterfaceCore.h"
+#include "VolumeHasChangedDelegateDelegate.h"
 #include "PlaybackStatusHasChangedDelegateDelegate.h"
 #include "EUWorksAudioPlaybackStatus.h"
 #include "UWorksInterfaceCoreMusic.generated.h"

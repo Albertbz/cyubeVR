@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestVacStatusForUserDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
-#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "RequestVacStatusForUserDelegateDelegate.h"
+#include "RequestVacStatusForUserMinimalDelegateDelegate.h"
 #include "UWorksRequestWebRequestVacStatusForUser.generated.h"
 
 UCLASS(Blueprintable)

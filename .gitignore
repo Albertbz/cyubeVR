@@ -72,3 +72,8 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# All content except for custom mods
+Content/*
+!Content/CreativeMenu/*
+!Content/DiggingModActors/*

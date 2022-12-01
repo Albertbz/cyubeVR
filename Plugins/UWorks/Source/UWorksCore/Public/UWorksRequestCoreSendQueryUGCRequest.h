@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksUGCQueryHandle.h"
+#include "SendQueryUGCRequestDelegateDelegate.h"
 #include "UWorksRequestCore.h"
 #include "SendQueryUGCRequestMinimalDelegateDelegate.h"
-#include "SendQueryUGCRequestDelegateDelegate.h"
+#include "UWorksUGCQueryHandle.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreSendQueryUGCRequest.generated.h"
 

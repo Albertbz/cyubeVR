@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "ProceduralRavenCrowds.generated.h"
 
-class URuntimeMeshProviderStatic;
 class URuntimeMeshComponent;
+class URuntimeMeshProviderStatic;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AProceduralRavenCrowds : public AActor {

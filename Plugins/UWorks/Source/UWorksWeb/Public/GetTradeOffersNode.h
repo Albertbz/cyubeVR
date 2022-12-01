@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeOffersDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "GetTradeOffersDelegateDelegate.h"
 #include "GetTradeOffersNode.generated.h"
 
 class UGetTradeOffersNode;

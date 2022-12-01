@@ -1,18 +1,18 @@
 #include "UWorksInterfaceCoreUGC.h"
 
-class UUWorksRequestCoreSubscribeItem;
 class UUWorksRequestCoreUnsubscribeItem;
-class UUWorksRequestCoreAddItemToFavorites;
-class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
 class UUWorksRequestCoreSubmitItemUpdate;
-class UUWorksRequestCoreCreateItem;
+class UUWorksRequestCoreSubscribeItem;
+class UUWorksRequestCoreGetUserItemVote;
+class UUWorksRequestCoreStopPlaytimeTrackingForAllItems;
 class UUWorksRequestCoreStopPlaytimeTracking;
-class UUWorksRequestCoreSendQueryUGCRequest;
 class UUWorksRequestCoreStartPlaytimeTracking;
+class UUWorksRequestCoreSendQueryUGCRequest;
 class UUWorksRequestCoreSetUserItemVote;
 class UUWorksRequestCoreRemoveItemFromFavorites;
-class UUWorksRequestCoreGetUserItemVote;
 class UUWorksInterfaceCoreUGC;
+class UUWorksRequestCoreCreateItem;
+class UUWorksRequestCoreAddItemToFavorites;
 
 bool UUWorksInterfaceCoreUGC::UpdateItemPreviewVideo(FUWorksUGCUpdateHandle Handle, int32 Index, const FString& PreviewVideo) {
     return false;

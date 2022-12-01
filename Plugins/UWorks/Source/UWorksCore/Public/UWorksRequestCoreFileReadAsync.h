@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "EUWorksResult.h"
 #include "FileReadAsyncDelegateDelegate.h"
 #include "FileReadAsyncMinimalDelegateDelegate.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreFileReadAsync.generated.h"
 
 UCLASS(Blueprintable)
@@ -23,7 +23,7 @@ public:
     UFUNCTION(BlueprintCallable)
     bool IsActive();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     void GetOutput(EUWorksResult& Result, int32& Offset, TArray<uint8>& Buffer);
     
     UFUNCTION(BlueprintCallable)

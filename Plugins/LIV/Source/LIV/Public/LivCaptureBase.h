@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LivInputFrame.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "LivActivationDelegateDelegate.h"
+#include "LivInputFrame.h"
 #include "LivCaptureBase.generated.h"
 
 UCLASS(Abstract, Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

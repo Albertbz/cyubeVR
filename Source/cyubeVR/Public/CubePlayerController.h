@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBlockTypeBP.h"
 #include "GameFramework/PlayerController.h"
+#include "EBlockTypeBP.h"
 #include "CubePlayerController.generated.h"
 
 UCLASS(Blueprintable)

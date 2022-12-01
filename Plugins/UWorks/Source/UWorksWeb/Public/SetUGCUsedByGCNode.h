@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "SetUGCUsedByGCDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "SetUGCUsedByGCNode.generated.h"
 
 class USetUGCUsedByGCNode;

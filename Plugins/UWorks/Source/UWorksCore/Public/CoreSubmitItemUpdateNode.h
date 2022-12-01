@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "SubmitItemUpdateDelegateDelegate.h"
-#include "UWorksUGCUpdateHandle.h"
 #include "EUWorksResult.h"
+#include "UWorksUGCUpdateHandle.h"
 #include "CoreSubmitItemUpdateNode.generated.h"
 
 class UCoreSubmitItemUpdateNode;

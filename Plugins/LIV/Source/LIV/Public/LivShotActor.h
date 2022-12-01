@@ -3,8 +3,8 @@
 #include "GameFramework/Actor.h"
 #include "LivShotActor.generated.h"
 
-class ULivShotComponent;
 class USceneComponent;
+class ULivShotComponent;
 
 UCLASS(Blueprintable)
 class LIV_API ALivShotActor : public AActor {

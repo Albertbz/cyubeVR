@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamWorkshopUpdateDetails.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamDelegateOnUpdateWorkshopItemDelegate.h"
 #include "SteamUGCItemId.h"
+#include "SteamDelegateOnUpdateWorkshopItemDelegate.h"
 #include "SteamDelegateOnUpdateWorkshopItemStartedDelegate.h"
+#include "SteamWorkshopUpdateDetails.h"
 #include "CallbackProxyUpdateWorkshopItem.generated.h"
 
 class UCallbackProxyUpdateWorkshopItem;

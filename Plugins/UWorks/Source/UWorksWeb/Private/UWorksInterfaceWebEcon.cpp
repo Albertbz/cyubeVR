@@ -2,13 +2,13 @@
 
 class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeOffers;
-class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebGetTradeOffer;
-class UUWorksRequestWebDeclineTradeOffer;
+class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebFlushInventoryCache;
-class UUWorksRequestWebCancelTradeOffer;
 class UUWorksRequestWebFlushContextCache;
 class UUWorksRequestWebFlushAssetAppearanceCache;
+class UUWorksRequestWebDeclineTradeOffer;
+class UUWorksRequestWebCancelTradeOffer;
 
 void UUWorksInterfaceWebEcon::GetTradeOffersSummaryMinimal(const FString& Key, int32 TimeLastVisit, const FGetTradeOffersSummaryMinimalDelegate& Delegate) {
 }

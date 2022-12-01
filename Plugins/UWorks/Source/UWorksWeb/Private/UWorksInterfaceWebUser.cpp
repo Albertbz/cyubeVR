@@ -1,8 +1,8 @@
 #include "UWorksInterfaceWebUser.h"
 
 class UUWorksRequestWebResolveVanityURL;
-class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetUserGroupList;
+class UUWorksRequestWebGrantPackage;
 class UUWorksRequestWebGetPublisherAppOwnershipChanges;
 class UUWorksRequestWebGetPublisherAppOwnership;
 class UUWorksRequestWebGetPlayerSummaries;

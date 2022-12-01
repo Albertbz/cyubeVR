@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "ResetLoginTokenDelegateDelegate.h"
 #include "UWorksSteamID.h"
-#include "ResetLoginTokenMinimalDelegateDelegate.h"
 #include "UWorksRequestWebResetLoginToken.generated.h"
 
 UCLASS(Blueprintable)

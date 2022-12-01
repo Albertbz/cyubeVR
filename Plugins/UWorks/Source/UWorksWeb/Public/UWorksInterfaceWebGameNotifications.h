@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
+#include "DeleteSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "UWorksTitle.h"
 #include "UWorksUsers.h"
+#include "UWorksSteamID.h"
 #include "UpdateSessionMinimalDelegateDelegate.h"
 #include "RequestNotificationsMinimalDelegateDelegate.h"
 #include "UWorksSessions.h"
 #include "GetSessionDetailsForAppMinimalDelegateDelegate.h"
 #include "EnumerateSessionsForAppMinimalDelegateDelegate.h"
-#include "DeleteSessionMinimalDelegateDelegate.h"
 #include "DeleteSessionBatchMinimalDelegateDelegate.h"
 #include "CreateSessionMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebGameNotifications.generated.h"
 
+class UUWorksRequestWebGetSessionDetailsForApp;
 class UUWorksRequestWebUpdateSession;
 class UUWorksRequestWebRequestNotifications;
-class UUWorksRequestWebGetSessionDetailsForApp;
 class UUWorksRequestWebEnumerateSessionsForApp;
 class UUWorksRequestWebDeleteSessionBatch;
 class UUWorksRequestWebDeleteSession;

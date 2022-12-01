@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
 #include "JoinClanChatRoomDelegateDelegate.h"
-#include "UWorksSteamID.h"
+#include "UWorksRequestCore.h"
 #include "JoinClanChatRoomMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "EUWorksChatRoomEnterResponse.h"
 #include "UWorksRequestCoreJoinClanChatRoom.generated.h"
 

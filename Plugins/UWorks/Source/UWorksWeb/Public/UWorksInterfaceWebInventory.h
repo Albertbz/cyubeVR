@@ -1,29 +1,29 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetItemDefsMinimalDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
-#include "GetPriceSheetMinimalDelegateDelegate.h"
-#include "UWorksSteamItemDef.h"
 #include "GetQuantityMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
+#include "UWorksSteamItemDef.h"
+#include "GetPriceSheetMinimalDelegateDelegate.h"
+#include "GetItemDefsMinimalDelegateDelegate.h"
 #include "GetInventoryMinimalDelegateDelegate.h"
-#include "ConsolidateMinimalDelegateDelegate.h"
 #include "UWorksSteamItemInstanceID.h"
 #include "ExchangeItemMinimalDelegateDelegate.h"
 #include "ConsumeItemMinimalDelegateDelegate.h"
+#include "ConsolidateMinimalDelegateDelegate.h"
 #include "AddPromoItemMinimalDelegateDelegate.h"
 #include "AddItemMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebInventory.generated.h"
 
-class UUWorksRequestWebGetQuantity;
-class UUWorksRequestWebGetInventory;
 class UUWorksRequestWebGetPriceSheet;
-class UUWorksRequestWebExchangeItem;
+class UUWorksRequestWebGetQuantity;
 class UUWorksRequestWebGetItemDefs;
+class UUWorksRequestWebGetInventory;
+class UUWorksRequestWebAddItem;
+class UUWorksRequestWebExchangeItem;
 class UUWorksRequestWebConsumeItem;
 class UUWorksRequestWebConsolidate;
 class UUWorksRequestWebAddPromoItem;
-class UUWorksRequestWebAddItem;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebInventory : public UUWorksInterfaceWeb {

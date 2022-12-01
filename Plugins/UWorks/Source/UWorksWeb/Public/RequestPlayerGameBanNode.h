@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
+#include "RequestPlayerGameBanDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "RequestPlayerGameBanNode.generated.h"
 

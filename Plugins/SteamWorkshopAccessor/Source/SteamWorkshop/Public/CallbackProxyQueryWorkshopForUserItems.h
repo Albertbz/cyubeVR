@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
-#include "SteamUGCQueryParameterUser.h"
 #include "SteamDelegateOnQueryWorkshopForUserItemsDelegate.h"
+#include "SteamUGCQueryParameterUser.h"
 #include "CallbackProxyQueryWorkshopForUserItems.generated.h"
 
 class UCallbackProxyQueryWorkshopForUserItems;

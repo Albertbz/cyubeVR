@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
-#include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
-#include "DownloadLeaderboardEntriesDelegateDelegate.h"
 #include "UWorksSteamLeaderboard.h"
+#include "DownloadLeaderboardEntriesDelegateDelegate.h"
+#include "DownloadLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "EUWorksLeaderboardDataRequest.h"
 #include "UWorksSteamLeaderboardEntries.h"
 #include "UWorksRequestCoreDownloadLeaderboardEntries.generated.h"

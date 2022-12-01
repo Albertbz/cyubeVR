@@ -1,24 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
+#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "SetUserStatsForGameMinimalDelegateDelegate.h"
-#include "GetUserStatsForGameMinimalDelegateDelegate.h"
 #include "GetSchemaForGameMinimalDelegateDelegate.h"
+#include "GetUserStatsForGameMinimalDelegateDelegate.h"
 #include "GetPlayerAchievementsMinimalDelegateDelegate.h"
 #include "GetNumberOfCurrentPlayersMinimalDelegateDelegate2.h"
 #include "GetGlobalStatsForGameMinimalDelegateDelegate.h"
-#include "GetGlobalAchievementPercentagesForAppMinimalDelegateDelegate.h"
 #include "UWorksGameID.h"
 #include "UWorksInterfaceWebUserStats.generated.h"
 
-class UUWorksRequestWebSetUserStatsForGame;
 class UUWorksRequestWebGetUserStatsForGame;
+class UUWorksRequestWebSetUserStatsForGame;
 class UUWorksRequestWebGetSchemaForGame;
-class UUWorksRequestWebGetNumberOfCurrentPlayers;
 class UUWorksRequestWebGetPlayerAchievements;
-class UUWorksRequestWebGetGlobalStatsForGame;
+class UUWorksRequestWebGetNumberOfCurrentPlayers;
 class UUWorksRequestWebGetGlobalAchievementPercentagesForApp;
+class UUWorksRequestWebGetGlobalStatsForGame;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebUserStats : public UUWorksInterfaceWeb {

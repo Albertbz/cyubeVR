@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetAccountPublicInfoDelegateDelegate.h"
 #include "UWorksRequestWeb.h"
 #include "GetAccountPublicInfoMinimalDelegateDelegate.h"
+#include "GetAccountPublicInfoDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksRequestWebGetAccountPublicInfo.generated.h"
 

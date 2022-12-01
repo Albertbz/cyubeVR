@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "PopulateItemDescriptionsDelegateDelegate.h"
-#include "UWorksLanguages.h"
 #include "PopulateItemDescriptionsMinimalDelegateDelegate.h"
+#include "UWorksLanguages.h"
 #include "UWorksRequestWebPopulateItemDescriptions.generated.h"
 
 UCLASS(Blueprintable)

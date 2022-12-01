@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GetLeaderboardEntriesDelegateDelegate.h"
-#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "GetLeaderboardEntriesMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetLeaderboardEntries.generated.h"
 
 UCLASS(Blueprintable)

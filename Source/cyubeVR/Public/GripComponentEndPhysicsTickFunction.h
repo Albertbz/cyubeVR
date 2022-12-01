@@ -18,4 +18,3 @@ struct TStructOpsTypeTraits<FGripComponentEndPhysicsTickFunction> : public TStru
         WithCopy = false
     };
 };
-

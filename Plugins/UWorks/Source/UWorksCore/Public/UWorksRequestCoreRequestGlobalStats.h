@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksRequestCore.h"
-#include "RequestGlobalStatsDelegateDelegate.h"
 #include "RequestGlobalStatsMinimalDelegateDelegate.h"
+#include "RequestGlobalStatsDelegateDelegate.h"
+#include "UWorksRequestCore.h"
 #include "UWorksGameID.h"
 #include "EUWorksResult.h"
 #include "UWorksRequestCoreRequestGlobalStats.generated.h"

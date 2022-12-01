@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "UWorksSteamID.h"
 #include "SetLeaderboardScoreDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "SetLeaderboardScoreNode.generated.h"
 
 class USetLeaderboardScoreNode;

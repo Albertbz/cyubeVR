@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "UWorksSteamInventoryResult.h"
-#include "UWorksSteamID.h"
 #include "SteamInventoryFullUpdateDelegateDelegate.h"
 #include "SteamInventoryResultReadyDelegateDelegate.h"
-#include "UWorksSteamItemDetails.h"
+#include "UWorksSteamInventoryResult.h"
+#include "UWorksSteamID.h"
 #include "SteamInventoryDefinitionUpdateDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "UWorksSteamItemInstanceID.h"
 #include "RequestEligiblePromoItemDefinitionsIDsMinimalDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamItemDetails.h"
 #include "UWorksInterfaceCoreInventory.generated.h"
 
 class UUWorksRequestCoreRequestEligiblePromoItemDefinitionsIDs;

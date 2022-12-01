@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "FlushContextCacheMinimalDelegateDelegate.h"
 #include "FlushContextCacheDelegateDelegate.h"
+#include "FlushContextCacheMinimalDelegateDelegate.h"
 #include "UWorksRequestWebFlushContextCache.generated.h"
 
 UCLASS(Blueprintable)

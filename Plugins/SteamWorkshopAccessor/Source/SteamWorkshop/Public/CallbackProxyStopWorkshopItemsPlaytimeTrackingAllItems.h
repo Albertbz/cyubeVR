@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamDelegateOnStopWorkshopPlaytimeTrackingAllItemsDelegate.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamDelegateOnStopWorkshopPlaytimeTrackingAllItemsDelegate.h"
 #include "CallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems.generated.h"
 
 class UCallbackProxyStopWorkshopItemsPlaytimeTrackingAllItems;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetPlayerBansMinimalDelegateDelegate.h"
 #include "GetPlayerBansDelegateDelegate.h"
+#include "GetPlayerBansMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetPlayerBans.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksInterfaceCore.h"
-#include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "DlcInstalledDelegateDelegate.h"
+#include "GetFileDetailsMinimalDelegateDelegate.h"
 #include "NewUrlLaunchParametersDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "UWorksInterfaceCoreApps.generated.h"

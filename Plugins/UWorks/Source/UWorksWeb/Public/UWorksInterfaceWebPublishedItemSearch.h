@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksSteamID.h"
 #include "UWorksInterfaceWeb.h"
-#include "RankedByVoteMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "ResultSetSummaryMinimalDelegateDelegate.h"
+#include "RankedByVoteMinimalDelegateDelegate.h"
 #include "RankedByTrendMinimalDelegateDelegate.h"
 #include "RankedByPublicationOrderMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebPublishedItemSearch.generated.h"
 
-class UUWorksRequestWebRankedByTrend;
-class UUWorksRequestWebResultSetSummary;
 class UUWorksRequestWebRankedByVote;
+class UUWorksRequestWebResultSetSummary;
+class UUWorksRequestWebRankedByTrend;
 class UUWorksRequestWebRankedByPublicationOrder;
 
 UCLASS(Blueprintable)

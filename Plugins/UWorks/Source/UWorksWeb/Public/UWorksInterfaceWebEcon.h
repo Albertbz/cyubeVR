@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GetTradeOfferMinimalDelegateDelegate.h"
+#include "GetTradeHistoryMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWeb.h"
 #include "GetTradeOffersSummaryMinimalDelegateDelegate.h"
 #include "GetTradeOffersMinimalDelegateDelegate.h"
-#include "GetTradeHistoryMinimalDelegateDelegate.h"
+#include "GetTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksSteamID.h"
 #include "FlushInventoryCacheMinimalDelegateDelegate.h"
 #include "FlushContextCacheMinimalDelegateDelegate.h"
@@ -13,15 +13,15 @@
 #include "CancelTradeOfferMinimalDelegateDelegate.h"
 #include "UWorksInterfaceWebEcon.generated.h"
 
-class UUWorksRequestWebFlushAssetAppearanceCache;
-class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeOffers;
+class UUWorksRequestWebGetTradeOffersSummary;
 class UUWorksRequestWebGetTradeOffer;
-class UUWorksRequestWebDeclineTradeOffer;
 class UUWorksRequestWebGetTradeHistory;
 class UUWorksRequestWebFlushInventoryCache;
-class UUWorksRequestWebCancelTradeOffer;
 class UUWorksRequestWebFlushContextCache;
+class UUWorksRequestWebFlushAssetAppearanceCache;
+class UUWorksRequestWebDeclineTradeOffer;
+class UUWorksRequestWebCancelTradeOffer;
 
 UCLASS(Blueprintable)
 class UWORKSWEB_API UUWorksInterfaceWebEcon : public UUWorksInterfaceWeb {

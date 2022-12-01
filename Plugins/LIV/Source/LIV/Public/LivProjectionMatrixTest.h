@@ -5,8 +5,8 @@
 #include "UObject/NoExportTypes.h"
 #include "LivProjectionMatrixTest.generated.h"
 
-class USceneCaptureComponent2D;
 class ASceneCapture2D;
+class USceneCaptureComponent2D;
 
 UCLASS(Blueprintable)
 class ALivProjectionMatrixTest : public AActor {

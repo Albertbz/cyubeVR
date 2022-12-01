@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
 #include "GrantPackageDelegateDelegate.h"
-#include "UWorksSteamID.h"
 #include "GrantPackageMinimalDelegateDelegate.h"
+#include "UWorksSteamID.h"
 #include "UWorksRequestWebGrantPackage.generated.h"
 
 UCLASS(Blueprintable)

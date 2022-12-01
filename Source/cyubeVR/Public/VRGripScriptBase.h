@@ -2,17 +2,17 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
-#include "Engine/EngineTypes.h"
-#include "BPActorGripInformation.h"
-#include "EGSTransformOverrideType.h"
-#include "UObject/NoExportTypes.h"
 #include "EBPVRResultSwitch.h"
+#include "EGSTransformOverrideType.h"
+#include "BPActorGripInformation.h"
+#include "UObject/NoExportTypes.h"
+#include "Engine/EngineTypes.h"
 #include "VRGripScriptBase.generated.h"
 
-class UPrimitiveComponent;
-class USceneComponent;
 class UGripMotionControllerComponent;
+class USceneComponent;
 class AActor;
+class UPrimitiveComponent;
 class UVRGripScriptBase;
 
 UCLASS(Abstract, Blueprintable, DefaultToInstanced, EditInlineNew)
@@ -65,7 +65,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGrip(UGripMotionControllerComponent* GrippingController, const FBPActorGripInformation& GripInformation);
     
-    UFUNCTION(BlueprintNativeEvent)
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnEndPlay(const EEndPlayReason::Type EndPlayReason);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)

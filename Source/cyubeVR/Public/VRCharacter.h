@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "GameFramework/Pawn.h"
 #include "LightReceiveInterface.h"
-#include "UObject/NoExportTypes.h"
 #include "VRCharacter.generated.h"
 
+class UMeshComponent;
 class UCameraComponent;
 class AActor;
-class UMeshComponent;
 
 UCLASS(Blueprintable)
 class CYUBEVR_API AVRCharacter : public APawn, public ILightReceiveInterface {

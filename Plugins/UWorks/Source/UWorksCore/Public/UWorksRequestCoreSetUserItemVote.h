@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "UWorksRequestCore.h"
 #include "SetUserItemVoteDelegateDelegate.h"
-#include "EUWorksResult.h"
 #include "SetUserItemVoteMinimalDelegateDelegate.h"
 #include "UWorksPublishedFileID.h"
+#include "EUWorksResult.h"
 #include "UWorksRequestCoreSetUserItemVote.generated.h"
 
 UCLASS(Blueprintable)

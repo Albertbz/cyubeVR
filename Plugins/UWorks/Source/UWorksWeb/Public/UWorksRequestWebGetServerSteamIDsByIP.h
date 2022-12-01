@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UWorksRequestWeb.h"
-#include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
 #include "GetServerSteamIDsByIPDelegateDelegate.h"
+#include "GetServerSteamIDsByIPMinimalDelegateDelegate.h"
 #include "UWorksRequestWebGetServerSteamIDsByIP.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "RequestUserStatsDelegateDelegate.h"
 #include "UWorksGameID.h"
-#include "UWorksSteamID.h"
+#include "RequestUserStatsDelegateDelegate.h"
 #include "EUWorksResult.h"
+#include "UWorksSteamID.h"
 #include "CoreRequestUserStatsNode.generated.h"
 
 class UCoreRequestUserStatsNode;

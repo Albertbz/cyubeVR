@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "UWorksRequestCore.h"
 #include "UploadLeaderboardScoreDelegateDelegate.h"
-#include "UWorksSteamLeaderboard.h"
 #include "UploadLeaderboardScoreMinimalDelegateDelegate.h"
+#include "UWorksSteamLeaderboard.h"
+#include "EUWorksLeaderboardUploadScoreMethod.h"
 #include "UWorksRequestCoreUploadLeaderboardScore.generated.h"
 
 UCLASS(Blueprintable)

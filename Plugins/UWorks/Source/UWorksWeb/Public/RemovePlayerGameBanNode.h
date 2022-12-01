@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RemovePlayerGameBanDelegateDelegate.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
 #include "UWorksSteamID.h"
-#include "RemovePlayerGameBanDelegateDelegate.h"
 #include "RemovePlayerGameBanNode.generated.h"
 
 class URemovePlayerGameBanNode;

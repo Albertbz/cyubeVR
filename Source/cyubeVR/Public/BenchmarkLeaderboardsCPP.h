@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "Blueprint/UserWidget.h"
-#include "EntryData.h"
 #include "UWorksSteamLeaderboardEntries.h"
+#include "EntryData.h"
 #include "BenchmarkLeaderboardsCPP.generated.h"
 
-class UScrollBox;
 class ULeaderboardEntryCPP;
+class UScrollBox;
 class UGameInstance;
 
 UCLASS(Blueprintable, EditInlineNew)

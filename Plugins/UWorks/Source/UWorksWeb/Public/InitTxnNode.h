@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "InitTxnDelegateDelegate.h"
 #include "UWorksSteamID.h"
+#include "InitTxnDelegateDelegate.h"
 #include "UWorksSteamItemDef.h"
 #include "EUWorksUserSession.h"
 #include "InitTxnNode.generated.h"

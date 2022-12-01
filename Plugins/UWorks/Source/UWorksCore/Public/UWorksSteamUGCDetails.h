@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UWorksPublishedFileID.h"
-#include "EUWorksResult.h"
-#include "UWorksUGCHandle.h"
 #include "EUWorksWorkshopFileType.h"
+#include "UWorksPublishedFileID.h"
 #include "UWorksSteamID.h"
+#include "EUWorksResult.h"
 #include "EUWorksRemoteStoragePublishedFileVisibility.h"
+#include "UWorksUGCHandle.h"
 #include "UWorksSteamUGCDetails.generated.h"
 
 USTRUCT(BlueprintType)
