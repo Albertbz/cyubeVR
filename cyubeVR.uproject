@@ -144,6 +144,10 @@
 		{
 			"Name": "ChaosEditor",
 			"Enabled": false
+		},
+		{
+			"Name": "GLTFImporter",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
