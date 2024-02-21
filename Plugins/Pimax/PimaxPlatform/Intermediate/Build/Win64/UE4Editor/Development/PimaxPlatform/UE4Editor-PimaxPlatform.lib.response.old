@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PimaxPlatform.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\CyubeVR Modding\UE4 Project Generator\fabbcfedbdff\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h.obj"
+"F:\CyubeVR Modding\UE4 Project Generator\fabbcfedbdff\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.cpp.obj"
+"F:\CyubeVR Modding\UE4 Project Generator\fabbcfedbdff\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.gen.cpp.obj"
+"F:\CyubeVR Modding\UE4 Project Generator\fabbcfedbdff\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Default.rc2.res"
+/OUT:"F:\CyubeVR Modding\UE4 Project Generator\fabbcfedbdff\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\UE4Editor-PimaxPlatform.lib"
