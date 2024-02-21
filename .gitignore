@@ -75,5 +75,5 @@ DerivedDataCache/*
 
 # All content except for custom mods
 Content/*
-!Content/CreativeMenu/*
-!Content/DiggingModActors/*
+!Content/CreativeMenu
+!Content/DiggingModActors
