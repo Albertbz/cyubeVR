@@ -21,11 +21,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "GoogleAnalytics",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/1b3f6c0fc07648b18758f7b883358b3e"
-		},
-		{
 			"Name": "OnlineSubsystemIOS",
 			"Enabled": false
 		},
@@ -85,15 +80,6 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/382ff2e7db2f483c82bf7246530d100a"
 		},
 		{
-			"Name": "MegascansPlugin",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Mac",
-				"Linux"
-			]
-		},
-		{
 			"Name": "SteamAudio",
 			"Enabled": true
 		},
@@ -137,21 +123,53 @@
 			"Enabled": false
 		},
 		{
+			"Name": "PimaxPlatform",
+			"Enabled": true
+		},
+		{
 			"Name": "BhapticsPlugin",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/c61885cc9ce54aacbb0230a1a79581cd"
+		},
+		{
+			"Name": "ImpostorBaker",
+			"Enabled": true
+		},
+		{
+			"Name": "XRVisualization",
+			"Enabled": false
+		},
+		{
+			"Name": "rdLODtools",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/d16c741cfabf451b96ab77092e198870"
 		},
 		{
 			"Name": "ChaosEditor",
 			"Enabled": false
 		},
 		{
-			"Name": "GLTFImporter",
+			"Name": "AssetDumper",
 			"Enabled": true
+		},
+		{
+			"Name": "AssetGenerator",
+			"Enabled": true
+		},
+		{
+			"Name": "DragonIKPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/3f3985e9eb40414aaabf645791fa4916"
+		},
+		{
+			"Name": "SurfaceNavPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/458a95c0ac214266b50f8bd925af1450"
 		}
 	],
 	"TargetPlatforms": [
 		"WindowsNoEditor",
-		"LinuxNoEditor"
+		"LinuxNoEditor",
+		"PS5"
 	]
 }

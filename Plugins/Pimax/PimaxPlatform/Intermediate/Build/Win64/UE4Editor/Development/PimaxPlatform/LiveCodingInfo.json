@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.PimaxPlatform.cpp.obj": [
+			"PimaxPlatformModule.cpp.obj",
+			"PvrInstanceSubsystem.cpp.obj",
+			"PvrPlatformSettings.cpp.obj"
+		],
+		"Module.PimaxPlatform.gen.cpp.obj": [
+			"PimaxPlatform.init.gen.cpp.obj",
+			"pvrFStringDelegateDelegate.gen.cpp.obj",
+			"PvrInstanceSubsystem.gen.cpp.obj",
+			"pvrInt32DelegateDelegate.gen.cpp.obj",
+			"pvrInt64StrDelegateDelegate.gen.cpp.obj",
+			"pvrNoParamDelegateDelegate.gen.cpp.obj",
+			"PvrPlatformSettings.gen.cpp.obj"
+		]
+	}
+}
