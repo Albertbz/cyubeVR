@@ -118,6 +118,7 @@ enum class EBlockTypeBP : uint8 {
     TorchCloakedRainbow,
     Cloakstone,
     Nugget_Cloak,
+    ChestShelf1,
     MAX_BLOCKTYPE,
 };
 

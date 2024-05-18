@@ -29,10 +29,10 @@
 /wd4244
 /wd4838
 /I .
-/I "F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Source\PimaxPlatform\Private"
-/I "F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Inc\PimaxPlatform"
-/I "F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Source"
-/I "F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Source\PimaxPlatform\Public"
+/I C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Source\PimaxPlatform\Private
+/I C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Inc\PimaxPlatform
+/I C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Source
+/I C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Source\PimaxPlatform\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -256,17 +256,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\include\um"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h.pch"
-"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.gen.cpp"
-/FI"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Definitions.PimaxPlatform.h"
-/Fo"F:\CyubeVR Modding\UE4 Project Generator\cyubeVRTemplateU57.3\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.gen.cpp.obj"
+/FI"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Intermediate\Build\Win64\cyubeVREditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.gen.cpp"
+/FI"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Definitions.PimaxPlatform.h"
+/Fo"C:\Users\alber\OneDrive\Dokumenter\GitHub\cyubeVR\Plugins\Pimax\PimaxPlatform\Intermediate\Build\Win64\UE4Editor\Development\PimaxPlatform\Module.PimaxPlatform.gen.cpp.obj"
 /TP
 /GR-
 /W4

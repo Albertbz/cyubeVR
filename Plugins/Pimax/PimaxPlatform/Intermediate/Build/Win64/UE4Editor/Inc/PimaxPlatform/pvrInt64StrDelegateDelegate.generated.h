@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PIMAXPLATFORM_pvrInt64StrDelegateDelegate_generated_h
 
-#define cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrInt64StrDelegateDelegate_h_5_DELEGATE \
+#define cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrInt64StrDelegateDelegate_h_5_DELEGATE \
 struct _Script_PimaxPlatform_eventpvrInt64StrDelegate_Parms \
 { \
 	int64 pvrint64; \
@@ -29,7 +29,7 @@ static inline void FpvrInt64StrDelegate_DelegateWrapper(const FMulticastScriptDe
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrInt64StrDelegateDelegate_h
+#define CURRENT_FILE_ID cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrInt64StrDelegateDelegate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

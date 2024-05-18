@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PIMAXPLATFORM_pvrFStringDelegateDelegate_generated_h
 
-#define cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrFStringDelegateDelegate_h_5_DELEGATE \
+#define cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrFStringDelegateDelegate_h_5_DELEGATE \
 struct _Script_PimaxPlatform_eventpvrFStringDelegate_Parms \
 { \
 	FString pvrStr; \
@@ -27,7 +27,7 @@ static inline void FpvrFStringDelegate_DelegateWrapper(const FMulticastScriptDel
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrFStringDelegateDelegate_h
+#define CURRENT_FILE_ID cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrFStringDelegateDelegate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
