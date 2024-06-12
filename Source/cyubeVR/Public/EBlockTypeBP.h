@@ -119,6 +119,13 @@ enum class EBlockTypeBP : uint8 {
     Cloakstone,
     Nugget_Cloak,
     ChestShelf1,
+    Chair2,
+    Chair2Bright,
+    Statue1,
+    Statue2,
+    CouchingPlaceSimple,
+    CouchingPlaceFancy,
+    StonePedestal,
     MAX_BLOCKTYPE,
 };
 
