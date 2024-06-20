@@ -20,5 +20,3 @@ AInventory* UModdingFunctionLibrary::GetInventoryReference(const UObject* WorldC
 
 void UModdingFunctionLibrary::GetAllMods(bool OnlyLocal, bool OnlyWorkshop, TArray<FString>& Paths, TArray<bool>& ValidProperties, TArray<FString>& DisplayNames, TArray<FString>& InternalNames, TArray<FString>& PreviewImages) {
 }
-
-
