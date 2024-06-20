@@ -29,6 +29,9 @@ public:
     UMyBlueprintFunctionLibrary();
 
     UFUNCTION(BlueprintCallable)
+    static void CopyStringToClipboard(const FString& StringToCopy);
+
+    UFUNCTION(BlueprintCallable)
     static bool WasMirrorResSet();
     
     UFUNCTION(BlueprintCallable)

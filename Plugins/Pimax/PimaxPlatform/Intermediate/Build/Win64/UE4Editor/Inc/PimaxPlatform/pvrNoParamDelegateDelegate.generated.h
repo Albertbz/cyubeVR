@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PIMAXPLATFORM_pvrNoParamDelegateDelegate_generated_h
 
-#define cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrNoParamDelegateDelegate_h_5_DELEGATE \
+#define cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrNoParamDelegateDelegate_h_5_DELEGATE \
 static inline void FpvrNoParamDelegate_DelegateWrapper(const FMulticastScriptDelegate& pvrNoParamDelegate) \
 { \
 	pvrNoParamDelegate.ProcessMulticastDelegate<UObject>(NULL); \
@@ -21,7 +21,7 @@ static inline void FpvrNoParamDelegate_DelegateWrapper(const FMulticastScriptDel
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID cyubeVRTemplateU57_3_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrNoParamDelegateDelegate_h
+#define CURRENT_FILE_ID cyubeVR_Plugins_Pimax_PimaxPlatform_Source_PimaxPlatform_Public_pvrNoParamDelegateDelegate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

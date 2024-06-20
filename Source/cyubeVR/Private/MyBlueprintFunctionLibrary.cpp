@@ -3,6 +3,10 @@
 UMyBlueprintFunctionLibrary::UMyBlueprintFunctionLibrary() {
 }
 
+void UMyBlueprintFunctionLibrary::CopyStringToClipboard(const FString& StringToCopy)
+{
+}
+
 bool UMyBlueprintFunctionLibrary::WasMirrorResSet() {
     return false;
 }
