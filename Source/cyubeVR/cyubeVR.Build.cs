@@ -14,7 +14,6 @@ public class cyubeVR : ModuleRules {
             "InputCore",
             "Niagara",
             "ProceduralMeshComponent",
-            "RuntimeMeshComponent",
             "UMG",
         });
     }

@@ -95,9 +95,9 @@ bool UGripMotionControllerComponent::Server_NotifySecondaryAttachmentChanged_Val
     return true;
 }
 
-void UGripMotionControllerComponent::Server_NotifyLocalGripRemoved_Implementation(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 LinearVelocity) {
+void UGripMotionControllerComponent::Server_NotifyLocalGripRemoved_Implementation(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 InLinearVelocity) {
 }
-bool UGripMotionControllerComponent::Server_NotifyLocalGripRemoved_Validate(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 LinearVelocity) {
+bool UGripMotionControllerComponent::Server_NotifyLocalGripRemoved_Validate(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 InLinearVelocity) {
     return true;
 }
 
@@ -183,7 +183,7 @@ FVector UGripMotionControllerComponent::GetPivotLocation_BP() {
     return FVector{};
 }
 
-void UGripMotionControllerComponent::GetPhysicsVelocities(const FBPActorGripInformation& Grip, FVector& AngularVelocity, FVector& LinearVelocity) {
+void UGripMotionControllerComponent::GetPhysicsVelocities(const FBPActorGripInformation& Grip, FVector& AngularVelocity, FVector& InLinearVelocity) {
 }
 
 bool UGripMotionControllerComponent::GetPhysicsHandleSettings(const FBPActorGripInformation& Grip, FBPAdvancedPhysicsHandleSettings& PhysicsHandleSettingsOut) {

@@ -1,11 +1,13 @@
 ﻿using UnrealBuildTool;
+using System.Collections.Generic;
 
-public class cyubeVREditorTarget : TargetRules {
-	public cyubeVREditorTarget(TargetInfo Target) : base(Target) {
-		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange(new string[] {
-			"cyubeVR",
-		});
-	}
+public class cyubeVREditorTarget : TargetRules
+{
+    public cyubeVREditorTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Editor;
+        DefaultBuildSettings = BuildSettingsVersion.V5;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+        ExtraModuleNames.Add("cyubeVR");
+    }
 }

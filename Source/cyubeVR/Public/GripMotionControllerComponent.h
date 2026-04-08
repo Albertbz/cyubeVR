@@ -184,7 +184,7 @@ public:
     void Server_NotifySecondaryAttachmentChanged(uint8 GripID, const FBPSecondaryGripInfo& SecondaryGripInfo);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_NotifyLocalGripRemoved(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 LinearVelocity);
+    void Server_NotifyLocalGripRemoved(uint8 GripID, const FTransform_NetQuantize& TransformAtDrop, FVector_NetQuantize100 AngularVelocity, FVector_NetQuantize100 InLinearVelocity);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_NotifyLocalGripAddedOrChanged(const FBPActorGripInformation& newGrip);
@@ -252,7 +252,7 @@ public:
     FVector GetPivotLocation_BP();
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    void GetPhysicsVelocities(const FBPActorGripInformation& Grip, FVector& AngularVelocity, FVector& LinearVelocity);
+    void GetPhysicsVelocities(const FBPActorGripInformation& Grip, FVector& AngularVelocity, FVector& InLinearVelocity);
     
     UFUNCTION(BlueprintCallable)
     bool GetPhysicsHandleSettings(const FBPActorGripInformation& Grip, FBPAdvancedPhysicsHandleSettings& PhysicsHandleSettingsOut);
