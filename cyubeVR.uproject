@@ -15,6 +15,16 @@
 			]
 		}
 	],
+	"Plugins": [
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
+		},
+		{
+			"Name": "AllToolsets",
+			"Enabled": true
+		}
+	],
 	"TargetPlatforms": [
 		"WindowsNoEditor",
 		"LinuxNoEditor",
